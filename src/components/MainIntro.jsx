@@ -1,9 +1,14 @@
+import starIcon from "../img/star-icon.svg"
+
 const MainIntro = () => {
     return (
         <section className="main-intro">
             <div className="w1500">
                 <div className="intro-contents">
-                    <h1>1883 년부터 구축된 세계적 네트워크</h1>
+                    <h1>1883 년부터 구축된 세계적 네트워크<img src={ starIcon } alt="✨" width="21" />
+                    
+
+                    </h1>
                     <p>알리앙스프랑세즈는 1883년 파리에 창설된 공익재단으로, 
     프랑스어 및 프랑스 문화교육을 위해 전 세계 132개국, 
     830여개의 네트워크를 자랑하는 자타공인 세계 제1의 프랑스어 교육기관입니다.

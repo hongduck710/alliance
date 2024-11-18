@@ -19,6 +19,24 @@ const GlobalStyles = createGlobalStyle`
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
+  }
+  @font-face {
+    font-family: 'TTSahmyookUniversityR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/TTSahmyookUniversityR.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
 }
 
   *{margin: 0; padding: 0; box-sizing:border-box;}
@@ -28,7 +46,7 @@ const GlobalStyles = createGlobalStyle`
   body{font-size:16px;font-family: 'Pretendard-Regular';}
   .w1500{max-width:1500px; width:100%; margin:auto;}
 
-  nav{width: 100%; box-shadow: 0 0px 4px rgba(0,0,0,0.23); position:sticky; top:0; background-color:#fff;}
+  nav{width: 100%; box-shadow: 0 0px 4px rgba(0,0,0,0.23); position:sticky; top:0; background-color:#fff;z-index: 1;}
   nav ul.color-deco{width:100%; margin:auto; display:flex; box-shadow: 0 0px 4px rgba(0,0,0,0.23);}
   nav ul.color-deco li{height: 11px; width:33.333%; }
   nav ul.color-deco li.white{background-color:#fff;}
@@ -50,18 +68,36 @@ const GlobalStyles = createGlobalStyle`
   .slider .slides .slide,
   .slider .slides .slide img{width:100%; margin:auto;}
 
+  // 메인 카드
+  .main-cards {margin-top:118px;}
+  .main-cards h1 {color: #222222; font-size:66px; text-align:center; margin-bottom:93px; letter-spacing: 0.5px;  }
+  .main-cards ul{display:flex; gap:55px; }
+  .main-cards li{width:25%; text-align:center; border:1px solid #CBCBCB; padding:35px 30px; position:relative;background-color:#fff;}
+  .main-cards li:before,
+  .main-cards li:after{position:absolute; content:""; width:131px; height:131px; display:block;background-color:transparent; }
+  .main-cards li:before{border-left:5px solid #F54A4A;border-top: 5px solid #F54A4A; top:-6px; left:-6px;}
+  .main-cards li:after{border-right: 5px solid #2C289C; border-bottom: 5px solid #2C289C; right:-6px; bottom:-6px;}
+  .main-cards li img{margin:auto;}
+  .main-cards li h2{font-size:32px; color:#000;    font-family: 'TTSahmyookUniversityR'; margin-bottom:30px;}
+  .main-cards li p{text-align:left;margin-top:30px; border-top:1px solid #CBCBCB; padding-top:30px; color:#222222;
+  font-size:17px; line-height:37px;}
   // 메인 인트로
   .main-intro {width:100%; margin: 172px auto 0 auto; padding:58px 0;
     background:linear-gradient(to right, #131550 -30%,#5E7FFF);}
   .main-intro .w1500 {display:flex; justify-content:space-between;}
   .main-intro .w1500 > div{width:50%;}
   .main-intro .w1500 .intro-contents{ color:#fff;}
-  .main-intro .w1500 .intro-contents h1{font-weight:800; font-size:46px;}
+  .main-intro .w1500 .intro-contents h1{font-weight:800; font-size:46px;word-spacing: -2px; position:relative;}
   .main-intro .w1500 .intro-contents h1:after{content:""; display:block; width:100%; height:1px; background-color:#fff;
   margin:16px 0 34px 0;}
+  .main-intro .w1500 .intro-contents h1 img{position: absolute;
+  right: 0px;
+  transform: translateY(50%);
+  bottom: 3%;}
   .main-intro .w1500 .intro-contents p{font-size:23px;line-height: 34px;}
 
-  .main-intro .w1500 > div.youtube-video{text-align:right;}
+  .main-intro .w1500 > div.youtube-video{text-align:right; }
+  .main-intro .w1500 > div.youtube-video iframe{box-shadow: 20px 20px 0 rgba(0,0,0,0.41);}
 `;
 
 const App = () => {
