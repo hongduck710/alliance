@@ -45,6 +45,7 @@ const GlobalStyles = createGlobalStyle`
   img{display:block;}
   body{font-size:16px;font-family: 'Pretendard-Regular';}
   .w1500{max-width:1500px; width:100%; margin:auto;}
+  .w1400{max-width:1400px; width:100%; margin:auto;}
 
   nav{width: 100%; box-shadow: 0 0px 4px rgba(0,0,0,0.23); position:sticky; top:0; background-color:#fff;z-index: 1;}
   nav ul.color-deco{width:100%; margin:auto; display:flex; box-shadow: 0 0px 4px rgba(0,0,0,0.23);}
@@ -70,14 +71,14 @@ const GlobalStyles = createGlobalStyle`
 
   // 메인 카드
   .main-cards {margin-top:118px;}
-  .main-cards h1 {color: #222222; font-size:66px; text-align:center; margin-bottom:93px; letter-spacing: 0.5px;  }
+  .main-cards h1 {color: #222222; font-size:81px; text-align:center; margin-bottom:93px;  }
   .main-cards ul{display:flex; gap:55px; }
   .main-cards li{width:25%; text-align:center; border:1px solid #CBCBCB; padding:35px 30px; position:relative;background-color:#fff;}
   .main-cards li:before,
   .main-cards li:after{position:absolute; content:""; width:131px; height:131px; display:block;background-color:transparent; }
   .main-cards li:before{border-left:5px solid #F54A4A;border-top: 5px solid #F54A4A; top:-6px; left:-6px;}
   .main-cards li:after{border-right: 5px solid #2C289C; border-bottom: 5px solid #2C289C; right:-6px; bottom:-6px;}
-  .main-cards li img{margin:auto;}
+  .main-cards li img{margin:auto; height:38px;}
   .main-cards li h2{font-size:32px; color:#000;    font-family: 'TTSahmyookUniversityR'; margin-bottom:30px;}
   .main-cards li p{text-align:left;margin-top:30px; border-top:1px solid #CBCBCB; padding-top:30px; color:#222222;
   font-size:17px; line-height:37px;}
@@ -94,10 +95,26 @@ const GlobalStyles = createGlobalStyle`
   right: 0px;
   transform: translateY(50%);
   bottom: 3%;}
-  .main-intro .w1500 .intro-contents p{font-size:23px;line-height: 34px;}
+  .main-intro .w1500 .intro-contents p{font-size:23px;line-height: 42px;
+    word-break: keep-all;}
 
   .main-intro .w1500 > div.youtube-video{text-align:right; }
-  .main-intro .w1500 > div.youtube-video iframe{box-shadow: 20px 20px 0 rgba(0,0,0,0.41);}
+  .main-intro .w1500 > div.youtube-video iframe{box-shadow: 20px 20px 0 rgba(0,0,0,0.41); display:inline-block;}
+
+    // 온라인강의 리스트
+    .video-class{margin-top: 150px;}
+    .video-class h1{color:#222; font-size:46px; margin-bottom:50px;}
+    .video-class h1 .view-all{font-size:22px; float:right; border: 2px solid #C4C4C4; padding:5px 14px;}
+    .video-class h1 .view-all img{display:inline-block;}
+    .video-class h2 {color:#A1A4F5; font-size:32px; margin-bottom: 6px;}
+    .video-class ul{display:flex;  gap:2%; justify-content:space-between;}
+    .video-class ul li {cursor: pointer;}
+    .video-class ul li .thumbnail-wrap{height:254px; overflow:hidden; border-radius:15px; position:relative;}
+    .video-class ul li .thumbnail-wrap:after{border-radius: 50%;content:"▶"; display:block;position:absolute; top:50%; left:50%; 
+      transform:translate(-50%, -50%); width: 80px; height: 80px;
+  border: 3px solid #fff; text-align: center; line-height: 80px; color: #fff; font-size: 41px;}
+    .video-class ul li .thumbnail-wrap img{width:100%;padding-left: 3px;}
+    .video-class ul li h1{font-size:22px; color:#434343;word-break: keep-all; font-weight: 800; margin-top:12px;}
 `;
 
 const App = () => {

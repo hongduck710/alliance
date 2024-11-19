@@ -18,6 +18,7 @@ const Navbar = () => {
                 <NavLink>소개</NavLink>
                 <NavLink>수강신청</NavLink>
                 <NavLink>시험안내</NavLink>
+                <NavLink>교재 구매</NavLink>
                 <NavLink>번역</NavLink>
                 <NavLink>공지</NavLink>
                 <NavLink>자주묻는 질문</NavLink>
