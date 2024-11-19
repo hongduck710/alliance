@@ -1,3 +1,4 @@
+import ClassSchedules from "../components/ClassSchedules";
 import MainBanner from "../components/MainBanner";
 import MainCards from "../components/MainCards";
 import MainIntro from "../components/MainIntro";
@@ -9,7 +10,8 @@ const HomePage = () => {
             <MainBanner />
             <MainCards />
             <MainIntro />
-            <VideoListings isHome={true} />
+            <ClassSchedules />
+            <VideoListings />
         </>
     );
 };
