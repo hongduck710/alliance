@@ -26,6 +26,12 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 400;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'HANAMDAUM';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
 
   .tangerine-regular {
   font-family: "Tangerine", cursive;
@@ -101,20 +107,47 @@ const GlobalStyles = createGlobalStyle`
   .main-intro .w1500 > div.youtube-video{text-align:right; }
   .main-intro .w1500 > div.youtube-video iframe{box-shadow: 20px 20px 0 rgba(0,0,0,0.41); display:inline-block;}
 
+
+    // 메인페이지 공통 헤드라인
+    .video-class h1, .class-schedules h1{color:#222; font-size:46px; margin-bottom:50px;}
+    .video-class h1 .view-all{font-size:22px; float:right; border: 2px solid #C4C4C4; padding:5px 14px;}
+
     // 온라인강의 리스트
     .video-class{margin-top: 150px;}
-    .video-class h1{color:#222; font-size:46px; margin-bottom:50px;}
-    .video-class h1 .view-all{font-size:22px; float:right; border: 2px solid #C4C4C4; padding:5px 14px;}
+
     .video-class h1 .view-all img{display:inline-block;}
-    .video-class h2 {color:#A1A4F5; font-size:32px; margin-bottom: 6px;}
+    .video-class h2, .class-schedules h2 {color:#A1A4F5; font-size:32px; margin-bottom: 6px;}
     .video-class ul{display:flex;  gap:2%; justify-content:space-between;}
     .video-class ul li {cursor: pointer;}
     .video-class ul li .thumbnail-wrap{height:254px; overflow:hidden; border-radius:15px; position:relative;}
     .video-class ul li .thumbnail-wrap:after{border-radius: 50%;content:"▶"; display:block;position:absolute; top:50%; left:50%; 
-      transform:translate(-50%, -50%); width: 80px; height: 80px;
+      transform:translate(-50%, -50%); width: 80px; height: 80px; padding-left: 3px;
   border: 3px solid #fff; text-align: center; line-height: 80px; color: #fff; font-size: 41px;}
     .video-class ul li .thumbnail-wrap img{width:100%;padding-left: 3px;}
     .video-class ul li h1{font-size:22px; color:#434343;word-break: keep-all; font-weight: 800; margin-top:12px;}
+
+    //  수강 스케줄
+    .class-schedules{margin-top:160px;}
+    .class-schedules ul{display:flex; justify-content:space-between; gap:3.3%;}
+    .class-schedules ul li {width:25%; border: 1px solid #CBCBCB; padding: 7px;
+    height:315px; }
+    .class-schedules ul li a{width:100%; height:100%;display:block;
+    
+    border: 2px solid #CBCBCB; padding:32px 0 32px 40px;
+    }
+    .class-schedules ul li:nth-child(odd) a{background:linear-gradient(135deg, #2E3FA5, #D6DCFF);}
+    .class-schedules ul li:nth-child(even) a{background:linear-gradient(135deg, #DE3535, #FFC8B4);}
+    .class-schedules ul li a h3{color:#fff; font-size:48px;    font-family: 'HANAMDAUM';}
+    .class-schedules ul li a h3 svg{float:right; font-size:65px; padding-right:40px;}
+    .class-schedules ul li a h4{margin-top:30px; font-size:29px; color:#fff; font-weight:bold;
+     width:fit-content;  padding-left:44px; left:-44px; position:relative; }
+    .class-schedules ul li a h4 span{font-size:25px;display:inline-block;
+      padding:15px 17px; margin-left:37px; }
+    .class-schedules ul li:nth-child(odd) a h4{background-color:#3F439B;}
+    .class-schedules ul li:nth-child(odd) a h4 span{ background-color:#2B2F81;}
+    .class-schedules ul li:nth-child(even) a h4{background-color:#DB2E34;}
+    .class-schedules ul li:nth-child(even) a h4 span{ background-color:#BF2328;}
+
 `;
 
 const App = () => {
