@@ -4,10 +4,6 @@ import videos from "../videos.json";
 import arrowIcon from "../img/arrow-right-solid.svg"
 
 const VideoListings = () => {
-        console.log(videos);
-
-
-
     return (
         <section className="w1400 video-class">
             <h2>Nos cours en ligne</h2>

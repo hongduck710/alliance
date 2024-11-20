@@ -14,12 +14,7 @@ import  "./index.css";
 const GlobalStyles = createGlobalStyle`
   ${reset};
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-  @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-  }
+ 
   @font-face {
     font-family: 'TTSahmyookUniversityR';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/TTSahmyookUniversityR.woff2') format('woff2');
@@ -49,7 +44,7 @@ const GlobalStyles = createGlobalStyle`
   a{text-decoration:none;}
   ul,li{list-style:none;}
   img{display:block;}
-  body{font-size:16px;font-family: 'Pretendard-Regular';}
+  body{font-size:16px;font-family: "pretendard"; letter-spacing: -0.5px;}
   .w1500{max-width:1500px; width:100%; margin:auto;}
   .w1400{max-width:1400px; width:100%; margin:auto;}
 
@@ -109,14 +104,15 @@ const GlobalStyles = createGlobalStyle`
 
 
     // 메인페이지 공통 헤드라인
-    .video-class h1, .class-schedules h1{color:#222; font-size:46px; margin-bottom:50px;}
-    .video-class h1 .view-all{font-size:22px; float:right; border: 2px solid #C4C4C4; padding:5px 14px;}
+    .video-class > h1, .class-schedules h1, .partners h1{color:#222; font-size:46px; margin-bottom:50px;font-weight: 700;word-spacing: -2px;}
+    .video-class h2, .class-schedules h2, .partners h2 {color:#A1A4F5; font-size:32px; margin-bottom: 6px;}
 
     // 온라인강의 리스트
     .video-class{margin-top: 150px;}
+    .video-class h1 .view-all{font-size:22px; float:right; border: 2px solid #C4C4C4; padding:5px 14px;}
 
     .video-class h1 .view-all img{display:inline-block;}
-    .video-class h2, .class-schedules h2 {color:#A1A4F5; font-size:32px; margin-bottom: 6px;}
+
     .video-class ul{display:flex;  gap:2%; justify-content:space-between;}
     .video-class ul li {cursor: pointer;}
     .video-class ul li .thumbnail-wrap{height:254px; overflow:hidden; border-radius:15px; position:relative;}
@@ -142,12 +138,19 @@ const GlobalStyles = createGlobalStyle`
     .class-schedules ul li a h4{margin-top:30px; font-size:29px; color:#fff; font-weight:bold;
      width:fit-content;  padding-left:44px; left:-44px; position:relative; }
     .class-schedules ul li a h4 span{font-size:25px;display:inline-block;
-      padding:15px 17px; margin-left:37px; }
+      padding:15px 17px; margin-left: 32px;}
     .class-schedules ul li:nth-child(odd) a h4{background-color:#3F439B;}
     .class-schedules ul li:nth-child(odd) a h4 span{ background-color:#2B2F81;}
     .class-schedules ul li:nth-child(even) a h4{background-color:#DB2E34;}
     .class-schedules ul li:nth-child(even) a h4 span{ background-color:#BF2328;}
-
+    
+    
+    // 파트너
+    .partners {margin-top:160px;}
+    .partners ul{display:flex; justify-content:space-between; gap:53px;}
+    .partners ul li{width: 25%; border:1px solid #DBDBDB; padding: 20px;
+    display: flex; justify-content: center; align-items: center; }
+    .partners ul li img{width: 100%;}
 `;
 
 const App = () => {
