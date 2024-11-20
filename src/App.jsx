@@ -47,6 +47,7 @@ const GlobalStyles = createGlobalStyle`
   body{font-size:16px;font-family: "pretendard"; letter-spacing: -0.5px;}
   .w1500{max-width:1500px; width:100%; margin:auto;}
   .w1400{max-width:1400px; width:100%; margin:auto;}
+  .w1350{max-width:1350px; width:100%; margin:auto;}
 
   nav{width: 100%; box-shadow: 0 0px 4px rgba(0,0,0,0.23); position:sticky; top:0; background-color:#fff;z-index: 1;}
   nav ul.color-deco{width:100%; margin:auto; display:flex; box-shadow: 0 0px 4px rgba(0,0,0,0.23);}
@@ -104,7 +105,7 @@ const GlobalStyles = createGlobalStyle`
 
 
     // 메인페이지 공통 헤드라인
-    .video-class > h1, .class-schedules h1, .partners h1{color:#222; font-size:46px; margin-bottom:50px;font-weight: 700;word-spacing: -2px;}
+    .video-class > h1, .class-schedules h1, .partners h1{color:#222; font-size:39px; margin-bottom:50px;font-weight: 700;word-spacing: -2px;}
     .video-class h2, .class-schedules h2, .partners h2 {color:#A1A4F5; font-size:32px; margin-bottom: 6px;}
 
     // 온라인강의 리스트
@@ -151,6 +152,23 @@ const GlobalStyles = createGlobalStyle`
     .partners ul li{width: 25%; border:1px solid #DBDBDB; padding: 20px;
     display: flex; justify-content: center; align-items: center; }
     .partners ul li img{width: 100%;}
+
+    // 푸터
+    footer{background-color:#444444; width:100%;margin:200px auto 0 auto; padding:44px 0;}
+    footer section{ margin:auto; color:#fff; display:flex; justify-content:space-between; flex-wrap: wrap;
+    }
+    footer section address{line-height:29px; width: calc(100% - 30% - 282px); padding-left: 7.4%;}
+    footer section h1.logo{max-width:282px; width:100%;}
+    footer section h1.logo img{height:100%;}
+    footer section .hours-location{width:30%;}
+    footer section .hours-location dl.location,
+    footer section .hours-location dl.location dt,
+    footer section .hours-location dl.location dd,
+    footer section .hours-location dl.location dd iframe{width:100%;}
+    footer.footer-bottom{background-color:#333333; width:100%; margin:0 auto; color:#fff; padding:15px 0; }
+    footer.footer-bottom section ul{display:flex; justify-content: space-between; gap:36px; align-items:center;}
+    footer.footer-bottom section{color:#999999;}
+    footer.footer-bottom section address{padding-left:0;}
 `;
 
 const App = () => {
