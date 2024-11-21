@@ -1,4 +1,6 @@
 import aboutImage from "../img/eiffel-tower.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBus, faSubway } from "@fortawesome/free-solid-svg-icons";
 
 const AboutPage = () => {
     return (
@@ -28,15 +30,17 @@ const AboutPage = () => {
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33859098.7177726!2d-12.32858730000005!3d-58.80400019999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb09dff882a7809e1%3A0xb08d0a385dc8c7c7!2z64Ko6re5!5e0!3m2!1sko!2skr!4v1732088638100!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div className="route-guide">
+                <h2>오시는 길</h2>
                 <dl>
-                    <dt>오시는 길</dt>
+                    <dt><FontAwesomeIcon icon={faBus}/> 버스이용</dt>
                     <dd>
-                        마포구청 역에서 하차 후, 오른쪽으로 100M 직진 후 
-                         왼쪽 방향으로 좌회전 후 50M 직진 
+                        마포구청 역에서 하차 후, 오른쪽으로 100M 직진 후 <br/>
+                        왼쪽 방향으로 좌회전 후 50M 직진
                     </dd>
+                    <dt><FontAwesomeIcon icon={faSubway}/> 지하철 이용</dt>
                     <dd>
-                        마포구청 역에서 하차 후, 
-                        오른쪽으로 100M 직진 후 왼쪽 방향으로 
+                        마포구청 역에서 하차 후, <br/>
+                        오른쪽으로 100M 직진 후 왼쪽 방향으로<br/>
                         좌회전 후 50M 직진 
                     </dd>
                     

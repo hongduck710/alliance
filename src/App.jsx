@@ -177,7 +177,7 @@ const GlobalStyles = createGlobalStyle`
     footer section .hours-location dl.hours,
     footer section .hours-location dl.hours dt{width:100%;}
     footer section .hours-location dl.location{margin-top:20px;}
-    footer section .hours-location dl.location iframe{height:250px;}
+    footer section .hours-location dl.location iframe{height:250px; border-radius:8px;}
     footer section .hours-location dl.location dt,
     footer section .hours-location dl.hours dt{margin-bottom:10px;}
     footer section .hours-location dl.hours{display:flex; flex-wrap:wrap;
@@ -189,10 +189,20 @@ const GlobalStyles = createGlobalStyle`
     footer.footer-bottom section address{padding-left:0;}
 
     //about페이지
-    .about h1{font-size:44px; text-align:center; color:#222222;  margin:130px auto 60px auto; font-family: "Tangerine",cursive;}
+    .about h1{font-size: 58px; text-align:center; color:#222222;  margin:130px auto 60px auto; font-family: "Tangerine",cursive;}
     .about .intro-wrap, 
     .about .intro-wrap img{width:100%; margin:auto;}
     .about .intro-wrap p{margin-top:65px; font-size:23px; color:#333333; line-height:37px;}
+    .about .location{margin-top:150px; width:100%; display: flex;
+      justify-content: space-between; gap:70px; }
+    .about .location .map,
+    .about .location .route-guide {width:50%;}
+    .about .location .route-guide h2{font-size:33px; color:#222; border-bottom:1px solid #E9E9E9; padding-bottom:12px;}
+    .about .location .route-guide dl dt{font-size:24px; font-weight:600; color:#333333;}
+    .about .location .route-guide dl dt svg{color:#FFA5BE;}
+    .about .location .route-guide dl dd{font-size:20px; color:#333; margin-top:16px; line-height:28px;}
+    .about .location .route-guide dl dt{margin-top:45px;}
+    .about .location .map iframe{width:100%;height: 400px;}
 
 `;
 
