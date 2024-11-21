@@ -157,14 +157,24 @@ const GlobalStyles = createGlobalStyle`
     footer{background-color:#444444; width:100%;margin:200px auto 0 auto; padding:44px 0;}
     footer section{ margin:auto; color:#fff; display:flex; justify-content:space-between; flex-wrap: wrap;
     }
-    footer section address{line-height:29px; width: calc(100% - 30% - 282px); padding-left: 7.4%;}
+    footer section address{line-height:29px; width: calc(100% - 27% - 282px); padding-left: 7.4%;}
     footer section h1.logo{max-width:282px; width:100%;}
     footer section h1.logo img{height:100%;}
-    footer section .hours-location{width:30%;}
+    footer section dl dt svg{margin-right: 3px;}
+    footer section .hours-location{width:27%;}
     footer section .hours-location dl.location,
     footer section .hours-location dl.location dt,
     footer section .hours-location dl.location dd,
-    footer section .hours-location dl.location dd iframe{width:100%;}
+    footer section .hours-location dl.location dd iframe,
+    footer section .hours-location dl.hours,
+    footer section .hours-location dl.hours dt{width:100%;}
+    footer section .hours-location dl.location{margin-top:20px;}
+    footer section .hours-location dl.location iframe{height:250px;}
+    footer section .hours-location dl.location dt,
+    footer section .hours-location dl.hours dt{margin-bottom:10px;}
+    footer section .hours-location dl.hours{display:flex; flex-wrap:wrap;
+    justify-content:space-between;}
+    footer section .hours-location dl.hours dd:last-child{width:100%; margin-top:6px;}
     footer.footer-bottom{background-color:#333333; width:100%; margin:0 auto; color:#fff; padding:15px 0; }
     footer.footer-bottom section ul{display:flex; justify-content: space-between; gap:36px; align-items:center;}
     footer.footer-bottom section{color:#999999;}
