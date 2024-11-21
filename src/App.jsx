@@ -10,6 +10,7 @@ import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import  "./App.css";
 import  "./index.css";
+import AboutPage from "./pages/AboutPage";
 
 const GlobalStyles = createGlobalStyle`
   ${reset};
@@ -40,6 +41,12 @@ const GlobalStyles = createGlobalStyle`
   font-style: normal;
 }
 
+.gowun-batang-regular {
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
   *{margin: 0; padding: 0; box-sizing:border-box;}
   a{text-decoration:none;}
   ul,li{list-style:none;}
@@ -48,6 +55,7 @@ const GlobalStyles = createGlobalStyle`
   .w1500{max-width:1500px; width:100%; margin:auto;}
   .w1400{max-width:1400px; width:100%; margin:auto;}
   .w1350{max-width:1350px; width:100%; margin:auto;}
+  .min-h{min-height:1000px;}
 
   nav{width: 100%; box-shadow: 0 0px 4px rgba(0,0,0,0.23); position:sticky; top:0; background-color:#fff;z-index: 1;}
   nav ul.color-deco{width:100%; margin:auto; display:flex; box-shadow: 0 0px 4px rgba(0,0,0,0.23);}
@@ -179,16 +187,25 @@ const GlobalStyles = createGlobalStyle`
     footer.footer-bottom section ul{display:flex; justify-content: space-between; gap:36px; align-items:center;}
     footer.footer-bottom section{color:#999999;}
     footer.footer-bottom section address{padding-left:0;}
+
+    //about페이지
+    .about h1{font-size:44px; text-align:center; color:#222222;  margin:130px auto 60px auto; font-family: "Tangerine",cursive;}
+    .about .intro-wrap, 
+    .about .intro-wrap img{width:100%; margin:auto;}
+    .about .intro-wrap p{margin-top:65px; font-size:23px; color:#333333; line-height:37px;}
+
 `;
 
 const App = () => {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={ < MainLayout /> } >
-        <Route index element={<HomePage /> } />
-      </Route>
-
+      
+        <Route path="/" element={ < MainLayout /> } >
+          <Route index element={<HomePage /> } />
+          <Route path="/about" element={<AboutPage/>} />
+        </Route>
+  
     )
   );
 

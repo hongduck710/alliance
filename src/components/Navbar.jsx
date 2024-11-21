@@ -15,7 +15,7 @@ const Navbar = () => {
                     <NavLink to="/"><span>A</span>llIANCE <span>F</span>RANÇAISE</NavLink>
                 </div>
                 <div className="menus">
-                <NavLink>소개</NavLink>
+                <NavLink to="/about">소개</NavLink>
                 <NavLink>수강신청</NavLink>
                 <NavLink>시험안내</NavLink>
                 <NavLink>교재 구매</NavLink>
