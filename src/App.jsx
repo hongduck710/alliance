@@ -63,14 +63,14 @@ const GlobalStyles = createGlobalStyle`
   header ul.color-deco li.red{background-color:#FE4C4C;}
   header ul.color-deco li.blue{background-color:#6F6AFF;}
 
-    header  nav .w1500{display: flex; flex-wrap: wrap; align-items:center; justify-content:space-between;padding: 28px 0;}
-    header  nav a{color: #1C1C1D; font-family: 'Pretendard-Regular';}
-    header  nav .logo a{font-size: 39px;font-family: "Playfair Display", serif;}
-    header  nav a span:first-child{color:#EF2C2C;}
-    header  nav a span:last-child{color: #1e1ee2;}
+  header  nav .w1500{display: flex; flex-wrap: wrap; align-items:center; justify-content:space-between;padding: 28px 0;}
+  header  nav a{color: #1C1C1D; font-family: 'Pretendard-Regular';}
+  header  nav .logo a{font-size: 39px;font-family: "Playfair Display", serif;}
+  header  nav a span:first-child{color:#EF2C2C;}
+  header  nav a span:last-child{color: #1e1ee2;}
 
-    header  nav .menus a{color:#333; font-size:17px; font-weight: 400; margin-right:58px;}
-    header  nav .menus a:last-child{margin-right:0;}
+  header  nav .menus a{color:#333; font-size:17px; font-weight: 400; margin-right:58px;}
+  header  nav .menus a:last-child{margin-right:0;}
 
   // 메인배너
   .slider,
@@ -94,7 +94,7 @@ const GlobalStyles = createGlobalStyle`
   // 메인 인트로
   .main-intro {width:100%; margin: 172px auto 0 auto; padding:58px 0; position: relative;
     background:linear-gradient(to right, #131550 -30%,#5E7FFF);}
-    .main-intro:after{content: "";
+  .main-intro:after{content: "";
   display: block;
   width: 34%;
   background-color: #fff;
@@ -106,17 +106,17 @@ const GlobalStyles = createGlobalStyle`
   .main-intro .w1500 {display:flex; justify-content:space-between; flex-wrap:wrap;}
   .main-intro .w1500 > div{width:50%;}
   .main-intro .w1500 .intro-contents{ color:#fff;}
-  .main-intro .w1500 .intro-contents h1{font-weight:800; font-size:46px;word-spacing: -2px; position:relative;}
-  .main-intro .w1500 .intro-contents h1:after{content:""; display:block; width:100%; height:1px; background-color:#fff;
+  .main-intro .w1500 .intro-contents h1{font-weight:800; font-size:46px;word-spacing: -2px; }
+  .main-intro .w1500 .intro-contents h1 p{width:100%; height:1px; background-color:#fff; position:relative;
   margin:16px 0 34px 0;}
-  .main-intro .w1500 .intro-contents h1 img{position: absolute;
-  right: 0px;
+  .main-intro .w1500 .intro-contents h1 p img{position: absolute;
+  right: -2px;
   transform: translateY(50%);
-  bottom: 3%;}
+  bottom: 1px;}
   .main-intro .w1500 .intro-contents p{font-size:23px;line-height: 42px;
     word-break: keep-all;}
 
-    .main-intro .w1500 > div.youtube-video{text-align:right; max-width:580px; width:100%;}
+  .main-intro .w1500 > div.youtube-video{text-align:right; max-width:580px; width:50%;}
   .main-intro .w1500 > div.youtube-video h2{position:relative;  padding-bottom: 50%; width:100%;z-index:1;}
   .main-intro .w1500 > div.youtube-video h2 iframe{box-shadow: 20px 20px 0 rgba(0,0,0,0.41);
   display: inline-block;
@@ -275,7 +275,7 @@ const GlobalStyles = createGlobalStyle`
 
     @media (max-width:768px){
       .main-intro .w1500 .intro-contents{width:100%;}
-      .main-intro .w1500 > div.youtube-video{margin: 30px auto 0 auto;}
+      .main-intro .w1500 > div.youtube-video{margin: 30px auto 0 auto; width:100%;}
       .class-schedules{padding: 4%;}
       .main-intro::after{display:none;}
   
