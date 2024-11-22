@@ -204,6 +204,26 @@ const GlobalStyles = createGlobalStyle`
     .about .location .route-guide dl dt{margin-top:45px;}
     .about .location .map iframe{width:100%;height: 400px;}
 
+
+    @media (max-width:1400px) {
+      .class-schedules ul{gap:1%;}
+      .class-schedules ul li{height: 270px;}
+      .class-schedules ul li a{padding: 32px 0 32px 20px;}
+      .class-schedules ul li a h4{ margin-top: 20px; left: -25px;display:flex; align-items:center;padding-left: 28px;font-size: 23px;}
+      .class-schedules ul li a h4:after{content:""; display:block; clear: both;}
+
+    }
+    @media (max-width:1200px) {
+      .class-schedules ul{gap: 7px 1%;}
+      .class-schedules ul li a h3{font-size:41px;} 
+      .class-schedules ul li a h3 svg{font-size:58px;}
+      .class-schedules ul li a h4 span{padding: 12px 14px;font-size: 21px;}
+    }
+    @media (max-width:1000px){
+      .class-schedules ul{flex-wrap:wrap; justify-content:center;}
+      .class-schedules ul li{width:34%;}
+    }
+
 `;
 
 const App = () => {
