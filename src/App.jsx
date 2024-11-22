@@ -57,21 +57,20 @@ const GlobalStyles = createGlobalStyle`
   .w1350{max-width:1350px; width:100%; margin:auto;}
   .min-h{min-height:1000px;}
 
-  nav{width: 100%; box-shadow: 0 0px 4px rgba(0,0,0,0.23); position:sticky; top:0; background-color:#fff;z-index: 1;}
-  nav ul.color-deco{width:100%; margin:auto; display:flex; box-shadow: 0 0px 4px rgba(0,0,0,0.23);}
-  nav ul.color-deco li{height: 11px; width:33.333%; }
-  nav ul.color-deco li.white{background-color:#fff;}
-  nav ul.color-deco li.red{background-color:#FE4C4C;}
-  nav ul.color-deco li.blue{background-color:#6F6AFF;}
+  header{width: 100%; box-shadow: 0 0px 4px rgba(0,0,0,0.23); position:sticky; top:0; background-color:#fff;z-index: 2;}
+  header ul.color-deco{width:100%; margin:auto; display:flex; box-shadow: 0 0px 4px rgba(0,0,0,0.23);}header ul.color-deco li{height: 11px; width:33.333%; }
+  header ul.color-deco li.white{background-color:#fff;}
+  header ul.color-deco li.red{background-color:#FE4C4C;}
+  header ul.color-deco li.blue{background-color:#6F6AFF;}
 
-  nav .w1500{display: flex; flex-wrap: wrap; align-items:center; justify-content:space-between;padding: 28px 0;}
-  nav a{color: #1C1C1D; font-family: 'Pretendard-Regular';}
-  nav .logo a{font-size: 39px;font-family: "Playfair Display", serif;}
-  nav a span:first-child{color:#EF2C2C;}
-  nav a span:last-child{color: #1e1ee2;}
+    header  nav .w1500{display: flex; flex-wrap: wrap; align-items:center; justify-content:space-between;padding: 28px 0;}
+    header  nav a{color: #1C1C1D; font-family: 'Pretendard-Regular';}
+    header  nav .logo a{font-size: 39px;font-family: "Playfair Display", serif;}
+    header  nav a span:first-child{color:#EF2C2C;}
+    header  nav a span:last-child{color: #1e1ee2;}
 
-  nav .menus a{color:#333; font-size:17px; font-weight: 400; margin-right:58px;}
-  nav .menus a:last-child{margin-right:0;}
+    header  nav .menus a{color:#333; font-size:17px; font-weight: 400; margin-right:58px;}
+    header  nav .menus a:last-child{margin-right:0;}
 
   // 메인배너
   .slider,
@@ -93,9 +92,18 @@ const GlobalStyles = createGlobalStyle`
   .main-cards li p{text-align:left;margin-top:30px; border-top:1px solid #CBCBCB; padding-top:30px; color:#222222;
   font-size:17px; line-height:37px;}
   // 메인 인트로
-  .main-intro {width:100%; margin: 172px auto 0 auto; padding:58px 0;
+  .main-intro {width:100%; margin: 172px auto 0 auto; padding:58px 0; position: relative;
     background:linear-gradient(to right, #131550 -30%,#5E7FFF);}
-  .main-intro .w1500 {display:flex; justify-content:space-between;}
+    .main-intro:after{content: "";
+  display: block;
+  width: 34%;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 101%;}
+  .main-intro .w1500 {display:flex; justify-content:space-between; flex-wrap:wrap;}
   .main-intro .w1500 > div{width:50%;}
   .main-intro .w1500 .intro-contents{ color:#fff;}
   .main-intro .w1500 .intro-contents h1{font-weight:800; font-size:46px;word-spacing: -2px; position:relative;}
@@ -108,8 +116,16 @@ const GlobalStyles = createGlobalStyle`
   .main-intro .w1500 .intro-contents p{font-size:23px;line-height: 42px;
     word-break: keep-all;}
 
-  .main-intro .w1500 > div.youtube-video{text-align:right; }
-  .main-intro .w1500 > div.youtube-video iframe{box-shadow: 20px 20px 0 rgba(0,0,0,0.41); display:inline-block;}
+    .main-intro .w1500 > div.youtube-video{text-align:right; max-width:580px; width:100%;}
+  .main-intro .w1500 > div.youtube-video h2{position:relative;  padding-bottom: 50%; width:100%;z-index:1;}
+  .main-intro .w1500 > div.youtube-video h2 iframe{box-shadow: 20px 20px 0 rgba(0,0,0,0.41);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
 
     // 메인페이지 공통 헤드라인
@@ -210,11 +226,24 @@ const GlobalStyles = createGlobalStyle`
       .main-cards ul{gap:20px;}
     }
     @media (max-width:1500px){
+      header nav{padding: 0 2%;}
+      header nav .menus a{margin-right:40px;}
       .main-cards ul{justify-content:center;}
       .main-cards ul li{width:23%;}
+
+      .main-intro .w1500 .intro-contents h1{font-size:38px;}
+      .main-intro .w1500 .intro-contents p{font-size:19px;}
+      .main-intro {padding:58px 2%;}
+      .main-intro .w1500 .intro-contents{}
+      .main-intro .w1500 > div.youtube-video iframe{width:100%;}
     }
 
     @media (max-width:1400px) {
+      header nav .menus a{margin-right:30px; font-size:16px;}
+      header nav .logo a { font-size:28px;}
+
+      .main-intro .w1500 .intro-contents{padding-right:1.5%;}
+
 
 
       .class-schedules ul{gap:1%;}
@@ -245,7 +274,10 @@ const GlobalStyles = createGlobalStyle`
     }
 
     @media (max-width:768px){
+      .main-intro .w1500 .intro-contents{width:100%;}
+      .main-intro .w1500 > div.youtube-video{margin: 30px auto 0 auto;}
       .class-schedules{padding: 4%;}
+      .main-intro::after{display:none;}
   
     }
     @media (max-width:600px){

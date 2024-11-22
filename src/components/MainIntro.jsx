@@ -19,7 +19,7 @@ const MainIntro = () => {
                     </p>
                 </div>
                 <div className="youtube-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/djz69yXs49I?si=woifnnIlL88yiZCO" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen></iframe>
+                    <h2><iframe  src="https://www.youtube.com/embed/djz69yXs49I?si=woifnnIlL88yiZCO" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen></iframe></h2>
                 </div>
             </div>
         </section>
