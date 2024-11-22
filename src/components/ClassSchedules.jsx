@@ -26,7 +26,7 @@ const ClassSchedules = () => {
                                 <p key={idx}>{line}</p>
                                 ))}
                             </h3>
-                            <h4>신청하기 <span><FontAwesomeIcon icon={faArrowRight} /></span></h4>
+                            <h4><strong>신청하기</strong><span><FontAwesomeIcon icon={faArrowRight} /></span></h4>
                         </Link>
                     </li> 
                 ))}
