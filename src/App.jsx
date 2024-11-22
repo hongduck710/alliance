@@ -206,8 +206,17 @@ const GlobalStyles = createGlobalStyle`
     .about .location .route-guide dl dt{margin-top:45px;}
     .about .location .map iframe{width:100%;height: 400px;}
 
+    @media (max-width:1510px) {
+      .main-cards ul{gap:20px;}
+    }
+    @media (max-width:1500px){
+      .main-cards ul{justify-content:center;}
+      .main-cards ul li{width:23%;}
+    }
 
     @media (max-width:1400px) {
+
+
       .class-schedules ul{gap:1%;}
       .class-schedules ul li a{padding: 32px 0 32px 0px; }
       .class-schedules ul li a h4{ margin-top: 20px; }
@@ -215,6 +224,8 @@ const GlobalStyles = createGlobalStyle`
 
     }
     @media (max-width:1200px) {
+      .main-cards ul{gap:10px;}
+
       .class-schedules ul{gap: 7px 1%;}
       .class-schedules ul li{height: 270px;}
       
@@ -223,6 +234,10 @@ const GlobalStyles = createGlobalStyle`
 
     }
     @media (max-width:1000px){
+      .main-cards ul{flex-wrap:wrap;}
+      .main-cards ul li{width:47%;}
+      .main-cards h1{font-size:50px;}
+      
       .class-schedules{padding: 6%;}
       .class-schedules ul{flex-wrap:wrap; justify-content:center;}
       .class-schedules h1,.class-schedules h2{text-align:center;}
@@ -242,6 +257,18 @@ const GlobalStyles = createGlobalStyle`
     }
  
     @media (max-width:480px){
+      .main-cards ul{gap:13px 10px;}
+      .main-cards h1{font-size:35px;margin-bottom: 60px;}
+      .main-cards li h2{font-size:24px;}
+      .main-cards li {padding: 20px 15px;}
+      .main-cards li img{height:32px;}
+      .main-cards li p{
+        font-size: 14px;
+  line-height: 22px;
+        margin-top :20px;
+        padding-top :20px;
+      }
+
       .class-schedules h1{font-size: 30px;} 
       .class-schedules h2{font-size: 23px; margin-bottom:10px;}
       .class-schedules ul li{width:100%; height:auto;}
