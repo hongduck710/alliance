@@ -245,7 +245,8 @@ const GlobalStyles = createGlobalStyle`
       .main-intro .w1500 .intro-contents{padding-right:1.5%;}
 
 
-
+      .video-class ul {gap:1%;}
+      .video-class ul li .thumbnail-wrap{height:200px;}
       .class-schedules ul{gap:1%;}
       .class-schedules ul li a{padding: 32px 0 32px 0px; }
       .class-schedules ul li a h4{ margin-top: 20px; }
@@ -267,16 +268,24 @@ const GlobalStyles = createGlobalStyle`
       .main-cards ul li{width:47%;}
       .main-cards h1{font-size:50px;}
       
+      .video-class ul li .thumbnail-wrap{height:150px;}
+
       .class-schedules{padding: 6%;}
       .class-schedules ul{flex-wrap:wrap; justify-content:center;}
-      .class-schedules h1,.class-schedules h2{text-align:center;}
+      .class-schedules h1,.class-schedules h2,
+      .video-class > h1, .video-class h2{text-align:center;}
+      .video-class h1 .view-all{float:none; display:block; width:fit-content; margin:15px auto 0 auto;}
       .class-schedules ul li{width:49%;}
     }
 
     @media (max-width:768px){
+      .video-class ul{flex-wrap:wrap;}
+      .video-class ul li{width:100%; margin-top:50px;}
+      .video-class ul li .thumbnail-wrap{height:254px;}
+
       .main-intro .w1500 .intro-contents{width:100%;}
       .main-intro .w1500 > div.youtube-video{margin: 30px auto 0 auto; width:100%;}
-      .class-schedules{padding: 4%;}
+      .class-schedules,  .video-class{padding: 0 4%;}
       .main-intro::after{display:none;}
   
     }
@@ -301,8 +310,8 @@ const GlobalStyles = createGlobalStyle`
         padding-top :20px;
       }
 
-      .class-schedules h1{font-size: 30px;} 
-      .class-schedules h2{font-size: 23px; margin-bottom:10px;}
+      .class-schedules h1,    .video-class > h1{font-size: 30px;} 
+      .class-schedules h2, .video-class h2{font-size: 23px; margin-bottom:10px;}
       .class-schedules ul li{width:100%; height:auto;}
       .class-schedules ul li a h3 svg{padding-right:30px; font-size:65px;}
    
