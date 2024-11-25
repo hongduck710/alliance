@@ -252,6 +252,8 @@ const GlobalStyles = createGlobalStyle`
       .class-schedules ul li a h4{ margin-top: 20px; }
       .class-schedules ul li a h4:after{content:""; display:block; clear: both;}
 
+      .partners ul{gap:25px;}
+
     }
     @media (max-width:1200px) {
       .main-cards ul{gap:10px;}
@@ -273,7 +275,8 @@ const GlobalStyles = createGlobalStyle`
       .class-schedules{padding: 6%;}
       .class-schedules ul{flex-wrap:wrap; justify-content:center;}
       .class-schedules h1,.class-schedules h2,
-      .video-class > h1, .video-class h2{text-align:center;}
+      .video-class > h1, .video-class h2,
+      .partners  h1, .partners h2{text-align:center;}
       .video-class h1 .view-all{float:none; display:block; width:fit-content; margin:15px auto 0 auto;}
       .class-schedules ul li{width:49%;}
     }
@@ -285,8 +288,21 @@ const GlobalStyles = createGlobalStyle`
 
       .main-intro .w1500 .intro-contents{width:100%;}
       .main-intro .w1500 > div.youtube-video{margin: 30px auto 0 auto; width:100%;}
-      .class-schedules,  .video-class{padding: 0 4%;}
+      .class-schedules,  .video-class,  .partners{padding: 0 4%;}
       .main-intro::after{display:none;}
+
+      .partners ul{flex-wrap:wrap;gap: 24px 2%;}
+      .partners ul li{width:48%; }
+
+      footer section{flex-wrap:wrap;}
+      footer section h1.logo{margin:auto;}
+      footer section .hours-location{padding: 0 7.4%;}
+      footer section .hours-location dl.hours{display:block;}
+      footer section address{margin: 40px auto;}
+      footer section address,
+      footer section .hours-location{width:100%;}
+
+      footer.footer-bottom section address{}
   
     }
     @media (max-width:600px){
@@ -310,8 +326,9 @@ const GlobalStyles = createGlobalStyle`
         padding-top :20px;
       }
 
-      .class-schedules h1,    .video-class > h1{font-size: 30px;} 
-      .class-schedules h2, .video-class h2{font-size: 23px; margin-bottom:10px;}
+      .class-schedules h1,    .video-class > h1, .partners  h1{font-size: 30px;} 
+
+      .class-schedules h2, .video-class h2, .partners h2{font-size: 23px; margin-bottom:10px;}
       .class-schedules ul li{width:100%; height:auto;}
       .class-schedules ul li a h3 svg{padding-right:30px; font-size:65px;}
    
