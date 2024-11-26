@@ -255,8 +255,9 @@ const GlobalStyles = createGlobalStyle`
 
       .partners ul{gap:25px;}
 
+      footer{padding: 44px 2%;}
       footer.footer-bottom{padding:15px 2%;}
-      footer.footer-bottom section ul{gap:20px; margin:auto;}
+      footer.footer-bottom section ul{gap:20px; }
       footer.footer-bottom section address{text-align:center;}
 
     }
@@ -285,8 +286,11 @@ const GlobalStyles = createGlobalStyle`
       .video-class h1 .view-all{float:none; display:block; width:fit-content; margin:15px auto 0 auto;}
       .class-schedules ul li{width:49%;}
 
+      footer section address{padding-left: 3%;}
       footer.footer-bottom section address,
       footer.footer-bottom section ul li a{font-size:14px;}
+      footer.footer-bottom section address{width:100%;}
+      footer.footer-bottom section ul{ margin:5px auto 0 auto;}
     }
 
     @media (max-width:768px){
@@ -306,6 +310,7 @@ const GlobalStyles = createGlobalStyle`
       footer section h1.logo{margin:auto;}
       footer section .hours-location{padding: 0 7.4%;}
       footer section .hours-location dl.hours{display:block;}
+      footer section address{padding-left:7.4%;}
       footer section address{margin: 40px auto;}
       footer section address,
       footer section .hours-location{width:100%; }
@@ -316,7 +321,7 @@ const GlobalStyles = createGlobalStyle`
     @media (max-width:600px){
       footer.footer-bottom section address,
       footer.footer-bottom section ul li a{font-size: 14px;}    
-      footer.footer-bottom section ul{margin:auto; } 
+
     }
     @media (max-width:550px){
       .class-schedules ul li a h3{font-size: 36px;}
