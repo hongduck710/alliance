@@ -203,8 +203,9 @@ const GlobalStyles = createGlobalStyle`
     footer section .hours-location dl.hours dd:last-child{width:100%; margin-top:6px;}
     footer.footer-bottom{background-color:#333333; width:100%; margin:0 auto; color:#fff; padding:15px 0; }
     footer.footer-bottom section ul{display:flex; justify-content: space-between; gap:36px; align-items:center;}
-    footer.footer-bottom section{color:#999999;}
-    footer.footer-bottom section address{padding-left:0;}
+    footer.footer-bottom section{color:#999999;align-items:center;}
+    footer.footer-bottom section address{padding-left:0;line-height:1; 
+      width:fit-content; }
 
     //about페이지
     .about h1{font-size: 58px; text-align:center; color:#222222;  margin:130px auto 60px auto; font-family: "Tangerine",cursive;}
@@ -254,6 +255,10 @@ const GlobalStyles = createGlobalStyle`
 
       .partners ul{gap:25px;}
 
+      footer.footer-bottom{padding:15px 2%;}
+      footer.footer-bottom section ul{gap:20px; margin:auto;}
+      footer.footer-bottom section address{text-align:center;}
+
     }
     @media (max-width:1200px) {
       .main-cards ul{gap:10px;}
@@ -279,6 +284,9 @@ const GlobalStyles = createGlobalStyle`
       .partners  h1, .partners h2{text-align:center;}
       .video-class h1 .view-all{float:none; display:block; width:fit-content; margin:15px auto 0 auto;}
       .class-schedules ul li{width:49%;}
+
+      footer.footer-bottom section address,
+      footer.footer-bottom section ul li a{font-size:14px;}
     }
 
     @media (max-width:768px){
@@ -300,13 +308,15 @@ const GlobalStyles = createGlobalStyle`
       footer section .hours-location dl.hours{display:block;}
       footer section address{margin: 40px auto;}
       footer section address,
-      footer section .hours-location{width:100%;}
+      footer section .hours-location{width:100%; }
 
-      footer.footer-bottom section address{}
+      footer.footer-bottom section address{margin:0 auto; }
   
     }
     @media (max-width:600px){
-     
+      footer.footer-bottom section address,
+      footer.footer-bottom section ul li a{font-size: 14px;}    
+      footer.footer-bottom section ul{margin:auto; } 
     }
     @media (max-width:550px){
       .class-schedules ul li a h3{font-size: 36px;}
