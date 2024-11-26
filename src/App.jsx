@@ -11,6 +11,7 @@ import reset from "styled-reset";
 import  "./App.css";
 import  "./index.css";
 import AboutPage from "./pages/AboutPage";
+import CenterClass from "./pages/CenterClass";
 
 const GlobalStyles = createGlobalStyle`
   ${reset};
@@ -63,7 +64,7 @@ const GlobalStyles = createGlobalStyle`
   header ul.color-deco li.red{background-color:#FE4C4C;}
   header ul.color-deco li.blue{background-color:#6F6AFF;}
 
-  header  nav .w1500{display: flex; flex-wrap: wrap; align-items:center; justify-content:space-between;padding: 28px 0;}
+  header  nav .w1500{display: flex; flex-wrap: wrap; align-items:center; justify-content:space-between;}
   header  nav a{color: #1C1C1D; font-family: 'Pretendard-Regular';}
   header  nav .logo a{font-size: 39px;font-family: "Playfair Display", serif;}
   header  nav a span:first-child{color:#EF2C2C;}
@@ -71,6 +72,14 @@ const GlobalStyles = createGlobalStyle`
 
   header  nav .menus a{color:#333; font-size:17px; font-weight: 400; margin-right:58px;}
   header  nav .menus a:last-child{margin-right:0;}
+  header  nav .menus .main-menu{position:relative; padding:33px 0; display:inline-block;}
+  header  nav .menus .main-menu .sub-menu{opacity:0; z-index:-1;
+  position:absolute; top:64px; left:50%; transform:translateX(-50%); background-color:#fff;
+  width:167%;padding: 15px 10px;box-shadow: 0 0px 4px rgba(0,0,0,0.23); transition: 0.3s ease-in-out;}
+  header  nav .menus .main-menu:hover .sub-menu{opacity:1;}
+  header  nav .menus .main-menu .sub-menu a{margin-right:0; width:100%;
+  display:block; text-align:center; line-height:1.5;}
+
 
   // 메인배너
   .slider,
@@ -363,6 +372,7 @@ const App = () => {
         <Route path="/" element={ < MainLayout /> } >
           <Route index element={<HomePage /> } />
           <Route path="/about" element={<AboutPage/>} />
+          <Route path="/center-class" element={<CenterClass/>} />
         </Route>
   
     )
