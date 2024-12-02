@@ -30,6 +30,8 @@ const GlobalStyles = createGlobalStyle`
     font-style: normal;
 }
 
+
+
   .tangerine-regular {
   font-family: "Tangerine", cursive;
   font-weight: 400;
@@ -231,6 +233,15 @@ const GlobalStyles = createGlobalStyle`
     .about .location .route-guide dl dd{font-size:20px; color:#333; margin-top:16px; line-height:28px;}
     .about .location .route-guide dl dt{margin-top:45px;}
     .about .location .map iframe{width:100%;height: 400px;}
+
+    //센터강의 페이지
+    .class-headline{text-align:center; margin:110px auto 0  auto;}
+    .class-headline h1{font-size:39px;color:#1C1C1D;
+    font-family:"Playfair Display",serif; }
+    .class-headline h1 span:first-child{color:#EF2C2C;}
+    .class-headline h1 span:last-child{color:#1e1ee2;}
+
+    .class-headline h2 {font-family: 'Happiness-Sans-Bold'; font-size:41px; color: #222222; margin-top:4px;}
 
     @media (max-width:1510px) {
       .main-cards ul{gap:20px;}
