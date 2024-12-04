@@ -81,6 +81,8 @@ const GlobalStyles = createGlobalStyle`
   header  nav .menus .main-menu:hover .sub-menu{opacity:1;}
   header  nav .menus .main-menu .sub-menu a{margin-right:0; width:100%;
   display:block; text-align:center; line-height:1.5;}
+  .m-hamburger-btn{display:none;font-size: 23px;}
+  .open-menus{display:block !important;}
 
 
   // 메인배너
@@ -314,6 +316,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     @media (max-width:768px){
+      .menus{display:none;}
+      .m-hamburger-btn{display:block; cursor: pointer;padding: 22px 0;}
       .video-class ul{flex-wrap:wrap;}
       .video-class ul li{width:100%; margin-top:50px;}
       .video-class ul li .thumbnail-wrap{height:254px;}

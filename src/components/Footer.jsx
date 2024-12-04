@@ -36,7 +36,7 @@ const Footer = () => {
                         <dl className="location">
                             <dt><FontAwesomeIcon icon={ faLocationDot } /> 오시는 길</dt>
                             <dd>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33859098.7177726!2d-12.32858730000005!3d-58.80400019999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb09dff882a7809e1%3A0xb08d0a385dc8c7c7!2z64Ko6re5!5e0!3m2!1sko!2skr!4v1732088638100!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33859098.7177726!2d-12.32858730000005!3d-58.80400019999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb09dff882a7809e1%3A0xb08d0a385dc8c7c7!2z64Ko6re5!5e0!3m2!1sko!2skr!4v1732088638100!5m2!1sko!2skr" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </dd>
                         </dl>
                 </div>
