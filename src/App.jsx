@@ -245,6 +245,30 @@ const GlobalStyles = createGlobalStyle`
 
     .class-headline h2 {font-family: 'Happiness-Sans-Bold'; font-size:41px; color: #222222; margin-top:4px;}
 
+  table.calendar, 
+  table.calendar tr, 
+  table.calendar tr td, 
+  table.calendar tr th{border: 1px solid #000;;}
+
+  .class-info{ margin-top:80px; width:50%; float:left;}
+
+  .class-info dl dt{  font-family: 'Happiness-Sans-Title'; font-size:28px; color:#333; padding:11px 0;
+  border-top:1px solid #BCBCBC;
+  border-bottom:1px solid #BCBCBC; }
+  .class-info dl:nth-child(2){border-bottom:1px solid #BCBCBC; padding-bottom:30px;}
+  .class-info dl dd span,   .class-info dl dd a{display:inline-block; vertical-align:middle;}
+  .class-info dl dd span{ color:#fff; background-color:#FF8181;
+  font-size:23px; padding:6px 13px; width:35%;max-width: 170px; }
+  .class-info dl dd:nth-child(2){margin-top:30px;}
+  .class-info dl dd:nth-child(3) {margin:10px 0;}
+  .class-info dl dd:nth-child(4){margin-bottom:30px;}
+  .class-info dl dd a{margin-left:35px; }
+  .class-info dl dd:nth-child(2) a,
+  .class-info dl dd:nth-child(3) a{font-family: "Playfair Display",serif; font-size:32px; color:#333;}
+  .class-info dl dd:nth-child(4) a{font-size:25px; color:#222222; border:1px solid #585858;
+  max-width:280px; width:100%; border-radius:50px; text-align:center; padding:5px 0;}
+  .class-info dl dd p{color: #333333; font-size:17px; line-height:29px;}
+  
     @media (max-width:1510px) {
       .main-cards ul{gap:20px;}
     }
