@@ -258,7 +258,7 @@ const GlobalStyles = createGlobalStyle`
   .class-info dl:nth-child(2){border-bottom:1px solid #BCBCBC; padding-bottom:30px;}
   .class-info dl dd span,   .class-info dl dd a{display:inline-block; vertical-align:middle;}
   .class-info dl dd span{ color:#fff; background-color:#FF8181;
-  font-size:23px; padding:6px 13px; width:35%;max-width: 170px; }
+  font-size:23px; padding:6px 0 6px 13px; width:35%;max-width: 170px; }
   .class-info dl dd:nth-child(2){margin-top:30px;}
   .class-info dl dd:nth-child(3) {margin:10px 0;}
   .class-info dl dd:nth-child(4){margin-bottom:30px;}
@@ -268,7 +268,12 @@ const GlobalStyles = createGlobalStyle`
   .class-info dl dd:nth-child(4) a{font-size:25px; color:#222222; border:1px solid #585858;
   max-width:280px; width:100%; border-radius:50px; text-align:center; padding:5px 0;}
   .class-info dl dd p{color: #333333; font-size:17px; line-height:29px;}
+  .class-schedule-wrap::after{content:""; display:block; clear: both;}
   
+  ul.level-curriculums{width:100%; margin:auto;display: flex;
+  justify-content: space-between; gap: 30px;}
+  ul.level-curriculums h1{background-color:#FB5B5B; color:#fff; font-size:35px; text-align:center; padding:10px 0;}
+
     @media (max-width:1510px) {
       .main-cards ul{gap:20px;}
     }
