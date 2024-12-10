@@ -3,6 +3,7 @@ import {useRef} from "react";
 const Calendar = () => {
 
     const tableRef = useRef();
+    const calRef = useRef();
 
     let date = new Date();
     let y = date.getFullYear();
@@ -55,11 +56,13 @@ const Calendar = () => {
                         <th key={idx}>{day}</th>
                     ))}
                 </tr>
-                <tr>
-
+                <tr ref={calRef}>
+                
                 </tr>
-               { console.log(tableRef.current)}
+                
+                {console.log(calRef)}
             </table>
+         
         </>
     )
 }

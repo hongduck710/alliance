@@ -339,6 +339,8 @@ text-align:center; border-radius:50%;
 
     }
     @media (max-width:1000px){
+      header nav .logo a{font-size:25px;}
+      header nav .menus a{margin-right:20px; font-size:14px;}
       .main-cards ul{flex-wrap:wrap;}
       .main-cards ul li{width:47%;}
       .main-cards h1{font-size:50px;}
@@ -361,6 +363,8 @@ text-align:center; border-radius:50%;
     }
 
     @media (max-width:768px){
+      header nav .logo a{font-size:22px;}
+      header nav .menus a{margin-right:17px;}
       .menus{display:none;}
       .m-hamburger-btn{display:block; cursor: pointer;padding: 22px 0;}
       .video-class ul{flex-wrap:wrap;}

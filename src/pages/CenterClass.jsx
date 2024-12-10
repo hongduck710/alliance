@@ -2,6 +2,7 @@ import ClassHeadline from "../components/ClassHeadline";
 import Calendar from "../components/Calendar";
 import ClassInfo from "../components/ClassInfo";
 import LevelsNotice from "../components/LevelsNotice";
+import CenterClasses from "../components/CenterClasses";
 
 const CenterClass = () => {
 
@@ -14,6 +15,7 @@ const CenterClass = () => {
                 <Calendar />
             </div>
             <LevelsNotice />
+            <CenterClasses />
         </section>
     );
 }
