@@ -250,7 +250,7 @@ const GlobalStyles = createGlobalStyle`
   table.calendar tr td, 
   table.calendar tr th{border: 1px solid #000;;}
 
-  .class-info{ margin-top:80px; width:50%; float:left;}
+  .class-info{ margin:80px auto 146px auto; width:50%; float:left;}
 
   .class-info dl dt{  font-family: 'Happiness-Sans-Title'; font-size:28px; color:#333; padding:11px 0;
   border-top:1px solid #BCBCBC;
@@ -272,7 +272,23 @@ const GlobalStyles = createGlobalStyle`
   
   ul.level-curriculums{width:100%; margin:auto;display: flex;
   justify-content: space-between; gap: 30px;}
-  ul.level-curriculums h1{background-color:#FB5B5B; color:#fff; font-size:35px; text-align:center; padding:10px 0;}
+  ul.level-curriculums li{box-shadow: 0 3px 6px rgba(0,0,0,0.16)}
+  ul.level-curriculums li h1{background-color:#FB5B5B; color:#fff; 
+    font-size:35px;letter-spacing: 13px; text-align:center; 
+    text-align:center; padding:10px 0; }
+  ul.level-curriculums li h2{position:relative;top: 23px;
+      font-family: "Roboto", sans-serif;
+      color:#111;
+  font-weight: 900;
+  font-style: normal;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  font-size:90px; background-color:#F2F2F2;
+text-align:center; border-radius:50%;
+  width:170px; height:170px; line-height:170px;
+  margin:auto;}
+  ul.level-curriculums li p{background-color:#6F8FE5;
+  color:#fff; font-size:18px; line-height:24px;
+  padding:48px 30px 30px 30px;}
 
     @media (max-width:1510px) {
       .main-cards ul{gap:20px;}
