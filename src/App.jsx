@@ -290,6 +290,23 @@ text-align:center; border-radius:50%;
   color:#fff; font-size:18px; line-height:24px;
   padding:48px 30px 30px 30px;}
 
+  .center-classes{display:flex; justify-content: center;gap:6px; 
+  flex-wrap:wrap; }
+  .center-classes,
+  .center-classes .class-tab {width:100%; margin:auto;}
+  .center-classes .class-tab input[type="radio"]{display:none;}
+  .center-classes .class-tab{display:flex;gap:6px; justify-content:center;
+    align-items: center; 
+  flex-wrap:wrap;}
+  .center-classes .class-tab label{background-color:#6F6AFF;cursor:pointer;
+  color:#fff; max-width:255px; width:100%; text-align:center; border-radius:5px; height:46px;
+  align-content: center;
+}
+.center-classes .class-tab:first-child{margin-top:241px;}
+  .center-classes .class-tab:first-child label:nth-child(even){background-color:#FE4C4C;}
+  .center-classes .class-tab:last-child label:nth-child(odd){background-color:#FE4C4C;}
+  
+
     @media (max-width:1510px) {
       .main-cards ul{gap:20px;}
     }
