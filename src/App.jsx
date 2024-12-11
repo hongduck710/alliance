@@ -304,8 +304,8 @@ text-align:center; border-radius:50%;
 }
 .center-classes .class-tab:first-child{margin-top:241px;}
   .center-classes .class-tab:first-child label:nth-child(even){background-color:#FE4C4C;}
-  .center-classes .class-tab:last-child label:nth-child(odd){background-color:#FE4C4C;}
-  
+  .center-classes .class-tab:nth-child(2) label:nth-child(odd){background-color:#FE4C4C;}
+
 
     @media (max-width:1510px) {
       .main-cards ul{gap:20px;}
