@@ -306,7 +306,35 @@ text-align:center; border-radius:50%;
   .center-classes .class-tab:first-child label:nth-child(even){background-color:#FE4C4C;}
   .center-classes .class-tab:nth-child(2) label:nth-child(odd){background-color:#FE4C4C;}
 
+.currculums{display:flex;gap:55px 30px; margin-top:120px;}
+.currculums ul.curriculum{width:50%; margin:auto;border:1px solid #BCBCBC;
+  display: flex; flex-wrap: wrap;  padding:6px;}  
+.currculums ul.curriculum li span{background-color:#FF5768;
+color:#fff; padding:5px 0; text-align:center; max-width:116px; width:100%;
+min-height:50px; align-content:center;}
 
+.currculums ul.curriculum li span,
+.currculums ul.curriculum li strong,
+.currculums ul.curriculum li a{display:inline-block; vertical-align:middle; text-align:center; font-size:19px;line-height: 1.05;}
+.currculums ul.curriculum li.register-class a{width:100%;}
+
+.currculums ul.curriculum li strong,
+.currculums ul.curriculum li a,
+.currculums ul.curriculum li.curriculum-detail button{width:calc(100% - 116px);}
+
+.currculums ul.curriculum li{width:50%;border-bottom:1px solid #F1F1F1; 
+  padding: 3px 0;}
+.currculums ul.curriculum li.class-name,
+.currculums ul.curriculum li.register-class{width:100%;}
+.currculums ul.curriculum li.register-class{padding:23px 0;text-align: center;}
+.currculums ul.curriculum li.register-class a{color:#fff; background:#A2001B; 
+  background:linear-gradient(to bottom, #FE3153,#A2001B); padding : 10px 0;
+max-width:273px; margin:auto; font-size:25px; border-radius:4px; position:relative;}
+.currculums ul.curriculum li.register-class a svg{font-size:18px;
+position:absolute; top:50%; transform:translateY(-50%); right:13px;}
+
+.currculums ul.curriculum li.curriculum-detail a{background-color:#DF2040; color:#fff;
+max-width:98px; width:100%; margin:auto;}
     @media (max-width:1510px) {
       .main-cards ul{gap:20px;}
     }
@@ -344,6 +372,11 @@ text-align:center; border-radius:50%;
       footer.footer-bottom section ul{gap:20px; }
       footer.footer-bottom section address{text-align:center;}
 
+      .currculums{padding:0 2%; gap:10px;}
+      .currculums ul.curriculum li span, 
+      .currculums ul.curriculum li strong, 
+      .currculums ul.curriculum li a{font-size:16px;}
+
     }
     @media (max-width:1200px) {
       .main-cards ul{gap:10px;}
@@ -377,6 +410,15 @@ text-align:center; border-radius:50%;
       footer.footer-bottom section ul li a{font-size:14px;}
       footer.footer-bottom section address{width:100%;}
       footer.footer-bottom section ul{ margin:5px auto 0 auto;}
+
+
+      .currculums ul.curriculum li span{max-width:90px;}
+      .currculums ul.curriculum li strong, .currculums ul.curriculum li a{
+        width: calc(100% - 90px); 
+      }
+      .currculums ul.curriculum li span, 
+      .currculums ul.curriculum li strong, 
+      .currculums ul.curriculum li a{font-size:14px;}
     }
 
     @media (max-width:768px){
@@ -407,10 +449,27 @@ text-align:center; border-radius:50%;
 
       footer.footer-bottom section address{margin:0 auto; }
   
+      .currculums{flex-wrap:wrap;}
+      .currculums ul.curriculum{width:100%;}
+      .currculums ul.curriculum li span, 
+      .currculums ul.curriculum li strong, 
+      .currculums ul.curriculum li a{font-size:19px;}
+
+      .currculums ul.curriculum li span{max-width:116px;}
+      .currculums ul.curriculum li strong,
+      .currculums ul.curriculum li a{width:calc(100% - 116px);}
     }
     @media (max-width:600px){
       footer.footer-bottom section address,
       footer.footer-bottom section ul li a{font-size: 14px;}    
+
+      .currculums ul.curriculum li span, 
+      .currculums ul.curriculum li strong, 
+      .currculums ul.curriculum li a{font-size:16px;}
+
+      .currculums ul.curriculum li span{max-width:90px;}
+      .currculums ul.curriculum li strong,
+      .currculums ul.curriculum li a{width:calc(100% - 90px);}
 
     }
     @media (max-width:550px){
@@ -437,7 +496,14 @@ text-align:center; border-radius:50%;
       .class-schedules ul li{width:100%; height:auto;}
       .class-schedules ul li a h3 svg{padding-right:30px; font-size:65px;}
    
-  
+
+      .currculums ul.curriculum li span, 
+      .currculums ul.curriculum li strong, 
+      .currculums ul.curriculum li a{font-size:14px;}
+
+      .currculums ul.curriculum li span{max-width:80px;}
+      .currculums ul.curriculum li strong,
+      .currculums ul.curriculum li a{width:calc(100% - 80px);}
     }
     @media (max-width:320px){
 

@@ -22,20 +22,7 @@ const CenterClasses = () => {
                 <label htmlFor="tab8">자율구사단계<br/>NIVEAU B1 → NIVEAU B2</label>
             </div>
 
-            <ul className="class-info">
-                <li><span>강의명<br/>COURS</span>Vocabulaire par thème et production orale B2
-                    <br/>고급 주제별 어휘와 말하기
-                </li>
-                <li><span>강사명<br/>PROF</span>VICTOR</li>
-                <li><span>수강코드<br/>CODE</span>#111000</li>
-                <li><span>레벨<br/>NIVEAU</span>B2</li>
-                <li><span>진도<br/>PARTIE</span>1 / 4</li>
-                <li><span>요일<br/>JOUR(S)</span>월요일, 화요일</li>
-                <li><span>시간<br/>HORAIRES</span>14:00~16:00</li>
-                <li><span>수강료<br/>TARIF</span>\240,000</li>
-                <li><span>커리큘럼</span><a href="">확인하기</a></li>
-                <li><a href="">수강 신청하기</a></li>
-            </ul>
+
         </div>
     )
 }
