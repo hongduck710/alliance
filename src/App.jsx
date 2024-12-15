@@ -177,7 +177,7 @@ const GlobalStyles = createGlobalStyle`
         left:-4px; position:relative; max-width: 258px; width:100%; text-align:center;}
      .class-schedules ul li a h4 strong{ display:inline-block; text-align:center;padding: 13px 0px;}
     .class-schedules ul li a h4 span{font-size:25px;display:inline-block;
-      padding:15px 17px; float:right; }
+      padding:15px 17px;  }
       .class-schedules ul li a h4:after{content:""; display:block; clear: both;}
     .class-schedules ul li:nth-child(odd) a h4 {background-color:#3F439B;}
     .class-schedules ul li:nth-child(odd) a h4 span{ background-color:#2B2F81;}
@@ -250,7 +250,17 @@ const GlobalStyles = createGlobalStyle`
   table.calendar tr td, 
   table.calendar tr th{border: 1px solid #000;;}
 
-  .class-info{ margin:80px auto 146px auto; width:50%; float:left;}
+  .class-schedule-wrap{margin:80px auto 146px auto;}
+  .class-schedule-wrap::after{content:""; display:block; clear: both; font-size:22px;}
+  .class-info{  width:49%; float:left;}
+  .calendar{width:49%;float:right;}
+
+  .calendar table, .calendar table tr{width:100%;}
+  .calendar table tr th{background-color:#F5617A; color:#ffffff; padding:5px 0;
+  border-right:1px solid #fff; font-size:22px; }
+  .calendar table tr th:last-child{border-right:none;}
+  .calendar table tr td{border:1px solid #BCBCBC; height:105px; vertical-align:top;
+  text-align:left; padding: 10px;}
 
   .class-info dl dt{  font-family: 'Happiness-Sans-Title'; font-size:28px; color:#333; padding:11px 0;
   border-top:1px solid #BCBCBC;
@@ -268,7 +278,7 @@ const GlobalStyles = createGlobalStyle`
   .class-info dl dd:nth-child(4) a{font-size:25px; color:#222222; border:1px solid #585858;
   max-width:280px; width:100%; border-radius:50px; text-align:center; padding:5px 0;}
   .class-info dl dd p{color: #333333; font-size:17px; line-height:29px;}
-  .class-schedule-wrap::after{content:""; display:block; clear: both;}
+
   
 
 
@@ -384,7 +394,7 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
 
       ul.level-curriculums{gap:15px; padding:0 1%;}
       
-      .class-info,
+      .class-schedule-wrap,
       .center-classes{padding:0 1%;}
       .class-info dl dd:nth-child(2) a, .class-info dl dd:nth-child(3) a{font-size: 26px;}
       .class-info dl dd:nth-child(4) a{max-width:230px;}
@@ -501,6 +511,7 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
       ul.level-curriculums li h2{width: 110px;
         height: 110px; line-height:110px; font-size:60px;}
 
+
       .class-info{width:100%;}
   
       .class-info dl dd span{ font-size:23px; }
@@ -508,6 +519,8 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
   .class-info dl dd:nth-child(2) a,
   .class-info dl dd:nth-child(3) a{ font-size:32px; }
   .class-info dl dd:nth-child(4) a{font-size:25px; max-width:280px;}
+  .calendar{width:100%; margin-top:50px;}
+
       
 
         .center-classes .class-tab{flex-wrap:wrap;}  
@@ -531,6 +544,8 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
       .class-info dl dd:nth-child(2) a, .class-info dl dd:nth-child(3) a{font-size:25px;}
       .class-info dl dd:nth-child(4) a{max-width:220px;}
       .class-info dl dd a{margin-left:20px; }
+
+      .calendar table tr td{height:95px;}
       .currculums ul.curriculum li span, 
       .currculums ul.curriculum li strong, 
       .currculums ul.curriculum li a{font-size:16px;}
@@ -539,6 +554,7 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
       .currculums ul.curriculum li strong,
       .currculums ul.curriculum li.curriculum-detail button{width:calc(100% - 90px);}
      
+      ul.level-curriculums li h1{font-size:20px;}
 
       ul.level-curriculums{justify-content:center; flex-wrap:wrap;}
       ul.level-curriculums li{width:30%;}
@@ -571,6 +587,8 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
    
       .class-info dl dd a{margin-left:10px; font-size: 22px;}
       .class-info dl dd span{font-size:19px;}
+      .calendar table tr th{font-size:17px;}
+      .calendar table tr td{height:70px; font-size:12px; padding:6px;}
       .currculums ul.curriculum li span, 
       .currculums ul.curriculum li strong, 
       .currculums ul.curriculum li a{font-size:14px;}
