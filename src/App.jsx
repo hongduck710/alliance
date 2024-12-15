@@ -255,7 +255,7 @@ const GlobalStyles = createGlobalStyle`
 
   .class-schedule-wrap{margin:80px auto 146px auto;}
   .class-schedule-wrap::after{content:""; display:block; clear: both; font-size:22px;}
-  .class-info{  width:49%; float:left;}
+  .class-info{  width:48%; float:left;}
   .calendar{width:49%;float:right;}
 
   .calendar table, .calendar table tr{width:100%;}
