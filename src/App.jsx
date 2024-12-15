@@ -179,7 +179,7 @@ const GlobalStyles = createGlobalStyle`
     .class-schedules ul li a h4{margin-top:30px; font-size:29px; color:#fff; font-weight:bold;
         left:-4px; position:relative; max-width: 258px; width:100%; text-align:center;}
      .class-schedules ul li a h4 strong{ display:inline-block; text-align:center;padding: 13px 0px;}
-    .class-schedules ul li a h4 span{font-size:25px;display:inline-block;
+    .class-schedules ul li a h4 span{font-size:25px;float:right;
       padding:15px 17px;  }
       .class-schedules ul li a h4:after{content:""; display:block; clear: both;}
     .class-schedules ul li:nth-child(odd) a h4 {background-color:#3F439B;}
