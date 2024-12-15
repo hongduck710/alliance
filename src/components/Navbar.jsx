@@ -8,9 +8,17 @@ import {useRef} from "react";
 const Navbar = () => {
     const mBtnRef = useRef();
     const menusRef = useRef();
+    const mainRef = useRef();
+    const subRef = useRef();
+
     const onClick = e => {
         e.preventDefault();
         menusRef.current.classList.toggle("open-menus");
+    }
+
+    const openSubmenu = e => {
+        e.preventDefault();
+        subRef.current.classList.toggle("open-menus")
     }
 
     return (
@@ -28,9 +36,9 @@ const Navbar = () => {
                     <button onClick={onClick} ref={mBtnRef} className="m-hamburger-btn"><FontAwesomeIcon icon={faBars} /></button>
                     <div className="menus" ref={menusRef}>
                         <NavLink className="main-menu" to="/about">소개</NavLink>
-                        <NavLink className="main-menu">
+                        <NavLink className="main-menu" onClick={openSubmenu} ref={mainRef}>
                             수강신청
-                            <div className="sub-menu">
+                            <div className="sub-menu" ref={subRef}>
                                 <NavLink to="center-class">센터강의</NavLink>
                                 <NavLink>온라인수업</NavLink>
                                 <NavLink>영상강의</NavLink>

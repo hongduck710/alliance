@@ -461,6 +461,17 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
       header nav .menus a{margin-right:17px;}
       .menus{display:none;}
       .m-hamburger-btn{display:block; cursor: pointer;padding: 22px 0;}
+      header nav .menus,
+      header nav .menus a{width:100%; font-size:16px;}
+      header nav .menus .main-menu{text-align:center; padding: 20px 0;}
+      header nav .menus .main-menu .sub-menu{position:static;transform:unset;
+      width:100%; opacity:1; display:none; ; transition:none;
+    box-shadow:unset;}
+      header nav .menus .main-menu .sub-menu a{padding:5px 0;}
+
+      header nav .menus .main-menu .sub-menu.open-menus{display:block;  margin: 20px 0 0 0;
+        border-top: 1px solid #dddcdc; border-bottom:1px solid #dddcdc;}
+
       .video-class ul{flex-wrap:wrap;}
       .video-class ul li{width:100%; margin-top:50px;}
       .video-class ul li .thumbnail-wrap{height:254px;}
