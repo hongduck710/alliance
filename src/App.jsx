@@ -576,6 +576,7 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
       .currculums ul.curriculum li span{max-width:80px;}
       .currculums ul.curriculum li strong,
       .currculums ul.curriculum li.curriculum-detail button{width:calc(100% - 80px);}
+      .currculums ul.curriculum li.curriculum-detail button a{max-width:85px;}
     }
     @media (max-width:320px){
 
