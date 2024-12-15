@@ -291,6 +291,7 @@ text-align:center; border-radius:50%;
   ul.level-curriculums li p{background-color:#6F8FE5;
   color:#fff; font-size:18px; line-height:24px;
   padding:48px 30px 30px 30px;}
+  ul.level-curriculums li h1:first-letter{padding-left:10px;}
 
   .center-classes{display:flex; justify-content: center;gap:6px; 
   flex-wrap:wrap; }
@@ -311,6 +312,7 @@ text-align:center; border-radius:50%;
 
 .currculums h1{background-color:#DF2040; color:#fff; text-align:center;
   width:100%; font-size:30px; padding: 8px 0;letter-spacing: 10px;}
+
 .currculums ul.curriculum{width:48%; margin:auto;border:1px solid #BCBCBC;
   display: flex; flex-wrap: wrap;  padding:6px;}  
 .currculums ul.curriculum li span{background-color:#FF5768;
@@ -577,6 +579,14 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
       .currculums ul.curriculum li strong,
       .currculums ul.curriculum li.curriculum-detail button{width:calc(100% - 80px);}
       .currculums ul.curriculum li.curriculum-detail button a{max-width:85px;}
+
+      ul.level-curriculums li h2{width: 100px;
+      height: 100px;
+      line-height: 100px;
+      font-size: 55px;}
+      ul.level-curriculums li p{font-size: 12px;
+      padding: 30px 10px 10px 10px;
+      line-height: 1.5;}
     }
     @media (max-width:320px){
 
