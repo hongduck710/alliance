@@ -12,6 +12,7 @@ import  "./App.css";
 import  "./index.css";
 import AboutPage from "./pages/AboutPage";
 import CenterClass from "./pages/CenterClass";
+import Login from "./components/Login";
 
 const GlobalStyles = createGlobalStyle`
   ${reset};
@@ -75,6 +76,8 @@ const GlobalStyles = createGlobalStyle`
   header  nav .menus a{color:#333; font-size:17px; font-weight: 400; margin-right:58px;}
   header  nav .menus a:last-child{margin-right:0;}
   header  nav .menus .main-menu{position:relative; padding:33px 0; display:inline-block;}
+  header  nav .menus .main-menu.login{margin-right:0;}
+  header  nav .menus .main-menu.login:after{content:"/";}
   header  nav .menus .main-menu .sub-menu{opacity:0; z-index:-1;
   position:absolute; top:64px; left:50%; transform:translateX(-50%); background-color:#fff;
   width:167%;padding: 15px 10px;box-shadow: 0 0px 4px rgba(0,0,0,0.23); transition: 0.3s ease-in-out;}
@@ -237,13 +240,13 @@ const GlobalStyles = createGlobalStyle`
     .about .location .map iframe{width:100%;height: 400px;}
 
     //센터강의 페이지
-    .class-headline{text-align:center; margin:110px auto 0  auto;}
-    .class-headline h1{font-size:39px;color:#1C1C1D;
+    .page-headline{text-align:center; margin: auto; padding-top:110px;}
+    .page-headline h1{font-size:39px;color:#1C1C1D;
     font-family:"Playfair Display",serif; }
-    .class-headline h1 span:first-child{color:#EF2C2C;}
-    .class-headline h1 span:last-child{color:#1e1ee2;}
+    .page-headline h1 span:first-child{color:#EF2C2C;}
+    .page-headline h1 span:last-child{color:#1e1ee2;}
 
-    .class-headline h2 {font-family: 'Happiness-Sans-Bold'; font-size:41px; color: #222222; margin-top:4px;}
+    .page-headline h2 {font-family: 'Happiness-Sans-Bold'; font-size:41px; color: #222222; margin-top:4px;}
 
   table.calendar, 
   table.calendar tr, 
@@ -355,6 +358,8 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
   align-items: center; border-radius:3px;}
 .currculums ul.curriculum li.curriculum-detail a svg {font-size:12px; vertical-align:middle; display:inline-block;}
 
+//로그인 페이지
+.login-page{background-color:#F3F3F3;}
     @media (max-width:1510px) {
       .main-cards ul{gap:20px;}
     }
@@ -476,6 +481,7 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
       header nav .menus,
       header nav .menus a{width:100%; font-size:16px;}
       header nav .menus .main-menu{text-align:center; padding: 20px 0;}
+      header  nav .menus .main-menu.login:after{display:none;}
       header nav .menus .main-menu .sub-menu{position:static;transform:unset;
       width:100%; opacity:1; display:none; ; transition:none;
     box-shadow:unset;}
@@ -621,6 +627,7 @@ const App = () => {
           <Route index element={<HomePage /> } />
           <Route path="/about" element={<AboutPage/>} />
           <Route path="/center-class" element={<CenterClass/>} />
+          <Route path="/login" element={<Login/>} />
         </Route>
   
     )
