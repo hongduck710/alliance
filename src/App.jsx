@@ -360,6 +360,10 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
 
 //로그인 페이지
 .login-page{background-color:#F3F3F3;}
+.login-page .form-wrap{max-width:440px; width:100%; margin:80px auto 0 auto;
+background-color:#fff; }
+
+
     @media (max-width:1510px) {
       .main-cards ul{gap:20px;}
     }
