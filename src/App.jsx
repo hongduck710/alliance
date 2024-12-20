@@ -229,7 +229,7 @@ const GlobalStyles = createGlobalStyle`
     .about .intro-wrap, 
     .about .intro-wrap img{width:100%; margin:auto;}
     .about .intro-wrap p{margin-top:65px; font-size:23px; color:#333333; line-height:37px;}
-    .about .location{margin-top:150px; width:100%; display: flex;
+    .about .location{margin:150px auto 200px auto; width:100%; display: flex;
       justify-content: space-between; gap:70px; }
     .about .location .map,
     .about .location .route-guide {width:50%;}
@@ -436,6 +436,7 @@ right:20px;}
       header nav .menus a{margin-right:30px; font-size:16px;}
       header nav .logo a { font-size:28px;}
 
+
       .main-intro .w1500 .intro-contents{padding-right:1.5%;}
 
 
@@ -452,6 +453,8 @@ right:20px;}
       footer.footer-bottom{padding:15px 2%;}
       footer.footer-bottom section ul{gap:20px; }
       footer.footer-bottom section address{text-align:center;}
+
+      .about{padding:0 1%;}
 
       ul.level-curriculums{gap:15px; padding:0 1%;}
       
