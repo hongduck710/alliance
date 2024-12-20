@@ -51,7 +51,7 @@ const Navbar = () => {
                         <NavLink className="main-menu">공지</NavLink>
                         <NavLink className="main-menu">자주묻는 질문</NavLink>
                         <NavLink to="/login" className="main-menu login">로그인</NavLink>
-                        <NavLink className="main-menu join">회원가입</NavLink>
+                        <NavLink to="/join" className="main-menu join">회원가입</NavLink>
                     </div>
                 </div>
 

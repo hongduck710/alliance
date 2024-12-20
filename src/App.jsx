@@ -13,6 +13,7 @@ import  "./index.css";
 import AboutPage from "./pages/AboutPage";
 import CenterClass from "./pages/CenterClass";
 import Login from "./components/Login";
+import Join from "./components/Join";
 
 const GlobalStyles = createGlobalStyle`
   ${reset};
@@ -682,9 +683,10 @@ const App = () => {
       
         <Route path="/" element={ < MainLayout /> } >
           <Route index element={<HomePage /> } />
-          <Route path="/about" element={<AboutPage/>} />
-          <Route path="/center-class" element={<CenterClass/>} />
-          <Route path="/login" element={<Login/>} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/center-class" element={<CenterClass />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/join" element={<Join />} />
         </Route>
   
     )
