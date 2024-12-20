@@ -59,7 +59,7 @@ const GlobalStyles = createGlobalStyle`
   .w1500{max-width:1500px; width:100%; margin:auto;}
   .w1400{max-width:1400px; width:100%; margin:auto;}
   .w1350{max-width:1350px; width:100%; margin:auto;}
-  .min-h{min-height:1000px;}
+
 
   header{width: 100%; box-shadow: 0 0px 4px rgba(0,0,0,0.23); position:sticky; top:0; background-color:#fff;z-index: 2;}
   header ul.color-deco{width:100%; margin:auto; display:flex; box-shadow: 0 0px 4px rgba(0,0,0,0.23);}header ul.color-deco li{height: 11px; width:33.333%; }
@@ -189,14 +189,14 @@ const GlobalStyles = createGlobalStyle`
     
     
     // 파트너
-    .partners {margin-top:160px;}
+    .partners {margin:160px auto 200px auto;}
     .partners ul{display:flex; justify-content:space-between; gap:53px;}
     .partners ul li{width: 25%; border:1px solid #DBDBDB; padding: 20px;
     display: flex; justify-content: center; align-items: center; }
     .partners ul li img{width: 100%;}
 
     // 푸터
-    footer{background-color:#444444; width:100%;margin:200px auto 0 auto; padding:44px 0;}
+    footer{background-color:#444444; width:100%;margin:0 auto 0 auto; padding:44px 0;}
     footer section{ margin:auto; color:#fff; display:flex; justify-content:space-between; flex-wrap: wrap;
     }
     footer section address{line-height:29px; width: calc(100% - 27% - 282px); padding-left: 7.4%;}
@@ -321,7 +321,7 @@ text-align:center; border-radius:50%;
   .center-classes .class-tab:first-child label:nth-child(even){background-color:#FE4C4C;}
   .center-classes .class-tab:nth-child(2) label:nth-child(odd){background-color:#FE4C4C;}
 
-.currculums{display:flex;gap:55px 30px; margin-top:120px; flex-wrap:wrap;}
+.currculums{display:flex;gap:55px 30px; margin:120px auto 200px auto; flex-wrap:wrap;}
 
 .currculums h1{background-color:#DF2040; color:#fff; text-align:center;
   width:100%; font-size:30px; padding: 8px 0;letter-spacing: 10px;}
@@ -359,10 +359,61 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
 .currculums ul.curriculum li.curriculum-detail a svg {font-size:12px; vertical-align:middle; display:inline-block;}
 
 //로그인 페이지
-.login-page{background-color:#F3F3F3;}
-.login-page .form-wrap{max-width:440px; width:100%; margin:80px auto 0 auto;
-background-color:#fff; }
+.login-page{background-color:#F3F3F3; padding-bottom:200px;}
+.login-page .form-wrap{max-width:440px; width:100%; height:100%; margin:80px auto 0 auto;
+background-color:#fff; padding:70px 45px 86px 45px; position: relative;
+border: 1px solid #BBBBBB; box-shadow:0 3px 6px rgba(0, 0, 0, 0.16)}
+.login-page .form-wrap form{width:100%;}
+.login-page .form-wrap:before,
+.login-page .form-wrap:after{ position:absolute; display:block; content:"";
+width:166px; height:166px;}
+.login-page .form-wrap:before{ border-left: 5px solid #F54A4A;
+  border-top: 5px solid #F54A4A;
+  top: -6px;
+  left: -6px;}
+  .login-page .form-wrap:after{
+    border-right: 5px solid #2C289C;
+  border-bottom: 5px solid #2C289C;
+  right: -6px;
+  bottom: -6px;
+  }  
 
+
+.login-page .form-wrap form input{border: 1px solid #cccccc; width:100%;
+font-size:16px; color:#999999; outline:none; padding: 15px 10px;}
+.login-page .form-wrap form input[type="password"]{margin-top:8px;}
+.login-page .form-wrap form button.login-btn{background-color:#FF4B69;
+text-align:center; width:100%; font-size:26px; color:#fff; padding:13px 0; letter-spacing:11px;
+text-indent: 11px;}
+
+.maintain-login-wrap{width:100%; margin:12px auto 18px auto;}
+.login-page .form-wrap form input[type="checkbox"]{display:none;}
+.login-page .form-wrap form label[for="maintain-login"] svg{opacity:0; color:#fff;}
+.login-page .form-wrap form label[for="maintain-login"]{border:1px solid #CCCCCC;
+width:16px; height:16px; display:inline-block;vertical-align:middle; cursor: pointer;}
+.login-page .form-wrap form input[type="checkbox"]:checked + label{
+  background-color: #FF4B69; border:1px solid #FF4B69;
+}
+.login-page .form-wrap form input[type="checkbox"]:checked + label svg{
+  display: block; opacity: 1;
+}
+.maintain-login-wrap span{content:"로그인상태 유지"; font-size:14px;
+color:#999999; font-size:14px; vertical-align:middle; margin-left:10px;}
+
+.login-page .form-wrap form .to-join{border:1px solid #AFAFAF; width:100%; letter-spacing: 3px;
+text-align:center; display:block; padding:15px 20px; color:#333; font-size:22px; position:relative;}
+.login-page .form-wrap form .to-join svg{width:14px; position:absolute; top:50%; transform:translateY(-50%);
+right:20px;}
+
+.login-page .form-wrap form .find-wrap{width:100%; margin:13px auto 43px auto;}
+.login-page .form-wrap form .find-wrap:after{content:""; display:block; clear: both;}
+.find-account{border-right:1px solid #999999;}
+.find-account ,.find-password{
+  color: #999999; font-size: 16px;
+  width: 50%;
+  float: left;
+  text-align: center;
+}
 
     @media (max-width:1510px) {
       .main-cards ul{gap:20px;}
@@ -615,6 +666,8 @@ background-color:#fff; }
       ul.level-curriculums li p{font-size: 12px;
       padding: 30px 10px 10px 10px;
       line-height: 1.5;}
+
+      .login-page .form-wrap{padding:0 1%;}
     }
     @media (max-width:320px){
 
