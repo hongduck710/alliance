@@ -56,7 +56,7 @@ const GlobalStyles = createGlobalStyle`
   a{text-decoration:none;}
   ul,li{list-style:none;}
   img{display:block;}
-  body{font-size:16px;font-family: "pretendard"; letter-spacing: -0.5px;}
+  body{font-size:16px;font-family: "pretendard";}
   .w1500{max-width:1500px; width:100%; margin:auto;}
   .w1400{max-width:1400px; width:100%; margin:auto;}
   .w1350{max-width:1350px; width:100%; margin:auto;}
@@ -359,34 +359,57 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
   align-items: center; border-radius:3px;}
 .currculums ul.curriculum li.curriculum-detail a svg {font-size:12px; vertical-align:middle; display:inline-block;}
 
-//로그인 페이지
-.login-page{background-color:#F3F3F3; padding-bottom:200px;}
-.login-page .form-wrap{max-width:440px; width:100%; height:100%; margin:80px auto 0 auto;
+//로그인, 회원가입 페이지
+.login-page,
+.join-page{background-color:#F3F3F3; padding-bottom:200px;}
+.login-page .form-wrap,
+.join-page .form-wrap{max-width:440px; width:100%; height:100%; margin:80px auto 0 auto;
 background-color:#fff; padding:70px 45px 86px 45px; position: relative;
 border: 1px solid #BBBBBB; box-shadow:0 3px 6px rgba(0, 0, 0, 0.16)}
-.login-page .form-wrap form{width:100%;}
+.login-page .form-wrap form,
+.join-page .form-wrap form{width:100%; position:relative; z-index:1;}
 .login-page .form-wrap:before,
-.login-page .form-wrap:after{ position:absolute; display:block; content:"";
+.login-page .form-wrap:after,
+.join-page .form-wrap:before,
+.join-page .form-wrap:after{ position:absolute; display:block; content:"";
 width:166px; height:166px;}
-.login-page .form-wrap:before{ border-left: 5px solid #F54A4A;
+.login-page .form-wrap:before,
+.join-page .form-wrap:before{ border-left: 5px solid #F54A4A;
   border-top: 5px solid #F54A4A;
   top: -6px;
   left: -6px;}
-  .login-page .form-wrap:after{
-    border-right: 5px solid #2C289C;
+.login-page .form-wrap:after,
+.join-page .form-wrap:after{
+  border-right: 5px solid #2C289C;
   border-bottom: 5px solid #2C289C;
   right: -6px;
   bottom: -6px;
-  }  
+}  
 
 
-.login-page .form-wrap form input{border: 1px solid #cccccc; width:100%;
-font-size:16px; color:#999999; outline:none; padding: 15px 10px;}
-.login-page .form-wrap form input[type="password"]{margin-top:8px;}
-.login-page .form-wrap form button.login-btn{background-color:#FF4B69;
+
+.login-page .form-wrap form input:first-child,
+.join-page .form-wrap form input:first-child,
+.join-page .form-wrap .address-wrap input:first-child{margin-top:0;}
+
+.login-page .form-wrap form input,
+.join-page .form-wrap form input,
+.join-page .form-wrap .address-wrap input{border: 1px solid #cccccc; width:100%;
+font-size:16px; color:#999999; outline:none; padding: 15px 10px;
+margin-top:8px;}
+.login-page .form-wrap form input,
+.join-page .form-wrap form input[type="password"]{margin-top:8px;}
+.login-page .form-wrap form button.login-btn,
+.join-page .form-wrap form button.join-btn{background-color:#FF4B69;
 text-align:center; width:100%; font-size:26px; color:#fff; padding:13px 0; letter-spacing:11px;
 text-indent: 11px;}
 
+.join-page .form-wrap .address-wrap{margin:30px auto 30px auto;width:100%;}
+.join-page .form-wrap .address-wrap .btn-wrap{display:flex; justify-content:space-between; gap:7px;}
+.join-page .form-wrap .address-wrap .btn-wrap button.search-address{font-size:16px;
+color:#999; background-color:#F2F2F2; border:1px solid #CCCCCC; padding:15px 0px;
+height:51px; width:30%;}
+.join-page .form-wrap .address-wrap .btn-wrap input.postcode{width:70%;}
 .maintain-login-wrap{width:100%; margin:12px auto 18px auto;}
 .login-page .form-wrap form input[type="checkbox"]{display:none;}
 .login-page .form-wrap form label[for="maintain-login"] svg{opacity:0; color:#fff;}
@@ -671,7 +694,9 @@ right:20px;}
       padding: 30px 10px 10px 10px;
       line-height: 1.5;}
 
-      .login-page .form-wrap{padding:0 1%;}
+      .login-page, .join-page{padding:0 1% 200px 1%; }
+      .login-page .form-wrap,
+      .join-page .form-wrap{padding:70px 20px 86px 20px;}
     }
     @media (max-width:320px){
 

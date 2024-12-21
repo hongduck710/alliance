@@ -11,7 +11,7 @@ const Login = () => {
             </div>
             <div className="form-wrap">
                 <form>
-                    <input type="text" placeholder="로그인"/>
+                    <input type="text" placeholder="아이디"/>
                     <input type="password" placeholder="비밀번호"/>
                     <div className="maintain-login-wrap">
                         <input type="checkbox" id="maintain-login" />
