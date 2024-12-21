@@ -562,6 +562,7 @@ right:20px;}
       header nav .menus a{margin-right:17px;}
       .menus{display:none;}
       .m-hamburger-btn{display:block; cursor: pointer;padding: 22px 0;}
+      header nav .menus{padding: 25px 0;}
       header nav .menus,
       header nav .menus a{width:100%; font-size:16px;}
       header nav .menus .main-menu{text-align:center; padding: 20px 0;}
