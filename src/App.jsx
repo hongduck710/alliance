@@ -74,7 +74,7 @@ const GlobalStyles = createGlobalStyle`
   header  nav a span:first-child{color:#EF2C2C;}
   header  nav a span:last-child{color: #1e1ee2;}
 
-  header  nav .menus a{color:#333; font-size:17px; font-weight: 400; margin-right:58px;}
+  header  nav .menus a{color:#333; font-size:16px; font-weight: 400; margin-right:47px;}
   header  nav .menus a:last-child{margin-right:0;}
   header  nav .menus .main-menu{position:relative; padding:33px 0; display:inline-block;}
   header  nav .menus .main-menu.login{margin-right:0;}
@@ -494,6 +494,8 @@ right:20px;}
 
     }
     @media (max-width:1200px) {
+      header nav .logo a{font-size:24px;}
+      header nav .menus a{margin-right:20px;}
       .main-cards ul{gap:10px;}
 
       ul.level-curriculums li h2{width: 150px;
@@ -508,8 +510,8 @@ right:20px;}
 
     }
     @media (max-width:1000px){
-      header nav .logo a{font-size:25px;}
-      header nav .menus a{margin-right:20px; font-size:14px;}
+      header nav .logo a{font-size:15px;}
+      header nav .menus a{margin-right:14px; font-size:14px;}
       .main-cards ul{flex-wrap:wrap;}
       .main-cards ul li{width:47%;}
       .main-cards h1{font-size:50px;}
