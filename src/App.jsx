@@ -311,16 +311,15 @@ text-align:center; border-radius:50%;
   flex-wrap:wrap; }
   .center-classes,
   .center-classes .class-tab {width:100%; margin:auto;}
-  .center-classes .class-tab input[type="radio"]{display:none;}
   .center-classes .class-tab{display:flex;gap:6px; justify-content:center;
     align-items: center; }
-  .center-classes .class-tab label{background-color:#6F6AFF;cursor:pointer;
+  .center-classes .class-tab a{background-color:#6F6AFF;cursor:pointer;
   color:#fff; max-width:255px; width:100%; text-align:center; border-radius:5px; height:46px;
   align-content: center;
 }
 .center-classes .class-tab:first-child{margin-top:241px;}
-  .center-classes .class-tab:first-child label:nth-child(even){background-color:#FE4C4C;}
-  .center-classes .class-tab:nth-child(2) label:nth-child(odd){background-color:#FE4C4C;}
+  .center-classes .class-tab:first-child a:nth-child(even){background-color:#FE4C4C;}
+  .center-classes .class-tab:nth-child(2) a:nth-child(odd){background-color:#FE4C4C;}
 
 .currculums{display:flex;gap:55px 30px; margin:120px auto 200px auto; flex-wrap:wrap;}
 
@@ -510,7 +509,7 @@ right:20px;}
 
     }
     @media (max-width:1000px){
-      header nav .logo a{font-size:15px;}
+      header nav .logo a{font-size:23px;}
       header nav .menus a{margin-right:14px; font-size:14px;}
       .main-cards ul{flex-wrap:wrap;}
       .main-cards ul li{width:47%;}
@@ -555,6 +554,10 @@ right:20px;}
       .currculums ul.curriculum li a{font-size:14px;}
 
       .currculums ul.curriculum li.curriculum-detail button a{max-width:85px;}
+    }
+
+    @media (max-width:900px){
+      header nav .menus a{font-size:12px;}
     }
 
     @media (max-width:768px){
@@ -670,7 +673,8 @@ right:20px;}
         padding-top :20px;
       }
 
-      .class-schedules h1,    .video-class > h1, .partners  h1{font-size: 30px;} 
+      .class-schedules h1,    .video-class > h1, .partners  h1{font-size: 30px;
+      word-break:keep-all;} 
 
       .class-schedules h2, .video-class h2, .partners h2{font-size: 23px; margin-bottom:10px;}
       .class-schedules ul li{width:100%; height:auto;}

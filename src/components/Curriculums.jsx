@@ -4,7 +4,7 @@ import { faArrowRight } from"@fortawesome/free-solid-svg-icons";
 const Curriculums = () => {
     return (
         <div className="currculums">
-            <h1>중급 NIVEAU B2</h1>
+            <h1 id="tab7">중급 NIVEAU B2</h1>
             <ul className="curriculum">
                 <li className="class-name"><span>강의명<br/>COURS</span><strong>Vocabulaire par thème et production orale B2
                     <br/>고급 주제별 어휘와 말하기</strong>
