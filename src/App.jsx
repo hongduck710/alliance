@@ -104,7 +104,8 @@ const GlobalStyles = createGlobalStyle`
   .main-cards li:after{position:absolute; content:""; width:131px; height:131px; display:block;background-color:transparent; }
   .main-cards li:before{border-left:5px solid #F54A4A;border-top: 5px solid #F54A4A; top:-6px; left:-6px;}
   .main-cards li:after{border-right: 5px solid #2C289C; border-bottom: 5px solid #2C289C; right:-6px; bottom:-6px;}
-  .main-cards li img{margin:auto; height:38px;}
+  .main-cards li h3{margin:auto; }
+  .main-cards li h3 svg{font-size:52px;}
   .main-cards li h2{font-size:32px; color:#000;    font-family: 'TTSahmyookUniversityR'; margin-bottom:30px;}
   .main-cards li p{text-align:left;margin-top:30px; border-top:1px solid #CBCBCB; padding-top:30px; color:#222222;
   font-size:17px; line-height:37px;}
