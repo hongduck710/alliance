@@ -565,7 +565,7 @@ right:20px;}
     }
 
     @media (max-width:800px){
-      header nav .logo ㅁ{font-size: 20px;}
+      header nav .logo a{font-size: 20px;}
     }
 
     @media (max-width:768px){
