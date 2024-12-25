@@ -636,6 +636,7 @@ right:20px;}
       .currculums ul.curriculum li.curriculum-detail button a{max-width:98px;}  
     }
     @media (max-width:600px){
+      .main-cards li h2{height:64px; word-break:keep-all;}
       footer.footer-bottom section address,
       footer.footer-bottom section ul li a{font-size: 14px;}    
 
