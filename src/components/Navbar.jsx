@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {useRef} from "react";
@@ -11,6 +11,8 @@ const Navbar = () => {
     const mainRef = useRef();
     const subRef = useRef();
 
+    const navigate = useNavigate();
+
     const onClick = e => {
         e.preventDefault();
         menusRef.current.classList.toggle("open-menus");
@@ -19,6 +21,10 @@ const Navbar = () => {
     const openSubmenu = e => {
         e.preventDefault();
         subRef.current.classList.toggle("open-menus")
+    }
+
+    const closeMenus = () => {
+        menusRef.current.classList.remove("open-menus");
     }
 
     return (
@@ -35,11 +41,11 @@ const Navbar = () => {
                     </div>
                     <button onClick={onClick} ref={mBtnRef} className="m-hamburger-btn"><FontAwesomeIcon icon={faBars} /></button>
                     <div className="menus" ref={menusRef}>
-                        <NavLink className="main-menu" to="/about">소개</NavLink>
+                        <NavLink className="main-menu" to="/about" onClick={closeMenus}>소개</NavLink>
                         <NavLink className="main-menu" onClick={openSubmenu} ref={mainRef}>
                             수강신청
                             <div className="sub-menu" ref={subRef}>
-                                <NavLink to="center-class">센터강의</NavLink>
+                                <NavLink to="/center-class" onClick={closeMenus}>센터강의</NavLink>
                                 <NavLink>온라인수업</NavLink>
                                 <NavLink>영상강의</NavLink>
                                 <NavLink>시험준비</NavLink>
