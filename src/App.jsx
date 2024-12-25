@@ -564,6 +564,10 @@ right:20px;}
       header nav .menus a{font-size:12px;}
     }
 
+    @media (max-width:800px){
+      header nav .logo ㅁ{font-size: 20px;}
+    }
+
     @media (max-width:768px){
       header nav .logo a{font-size:22px;}
       header nav .menus a{margin-right:17px;}
