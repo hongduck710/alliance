@@ -157,6 +157,9 @@ const GlobalStyles = createGlobalStyle`
     .video-class h1 .view-all img{display:inline-block;}
 
     .video-class ul{display:flex;  gap:2%; justify-content:space-between;}
+    .video-class:after{content:""; display:block; height: 5px; margin-top: 35px;
+      width:100%; background:linear-gradient(to left,#5E7FFF,#2B2FA3,#131550);
+      transform: perspective(300px) rotatex(20deg);}
     .video-class ul li {cursor: pointer;}
     .video-class ul li .thumbnail-wrap{height:254px; overflow:hidden; border-radius:15px; position:relative;}
     .video-class ul li .thumbnail-wrap:after{border-radius: 50%;content:"▶"; display:block;position:absolute; top:50%; left:50%; 
