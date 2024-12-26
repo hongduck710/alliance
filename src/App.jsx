@@ -647,7 +647,7 @@ right:20px;}
       .currculums ul.curriculum li.curriculum-detail button a{max-width:98px;}  
     }
     @media (max-width:600px){
-      .main-cards li h2{height:64px; word-break:keep-all;}
+      .main-cards li h2{ word-break:keep-all; word-spacing:-7px; font-size: 27px;}
       footer.footer-bottom section address,
       footer.footer-bottom section ul li a{font-size: 14px;}    
 
@@ -679,7 +679,7 @@ right:20px;}
     @media (max-width:480px){
       .main-cards ul{gap:13px 10px;}
       .main-cards h1{font-size:35px;margin-bottom: 60px;}
-      .main-cards li h2{font-size:24px;}
+      .main-cards li h2{font-size:20px;}
       .main-cards li {padding: 20px 15px;}
       .main-cards li img{height:32px;}
       .main-cards li p{
