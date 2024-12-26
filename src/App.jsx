@@ -644,7 +644,7 @@ right:20px;}
       footer.footer-bottom section address,
       footer.footer-bottom section ul li a{font-size: 14px;}    
 
-      .class-info dl dd:nth-child(2) a, .class-info dl dd:nth-child(3) a{font-size:25px;}
+      .class-info dl dd:nth-child(2) a, .class-info dl dd:nth-child(3) a{font-size:22px;}
       .class-info dl dd:nth-child(4) a{max-width:220px;}
       .class-info dl dd a{margin-left:20px; }
 

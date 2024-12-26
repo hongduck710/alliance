@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {useRef} from "react";
@@ -11,7 +11,6 @@ const Navbar = () => {
     const mainRef = useRef();
     const subRef = useRef();
 
-    const navigate = useNavigate();
 
     const onClick = e => {
         e.preventDefault();
@@ -56,8 +55,8 @@ const Navbar = () => {
                         <NavLink className="main-menu">번역</NavLink>
                         <NavLink className="main-menu">공지</NavLink>
                         <NavLink className="main-menu">자주묻는 질문</NavLink>
-                        <NavLink to="/login" className="main-menu login">로그인</NavLink>
-                        <NavLink to="/join" className="main-menu join">회원가입</NavLink>
+                        <NavLink to="/login" className="main-menu login" onClick={closeMenus}>로그인</NavLink>
+                        <NavLink to="/join" className="main-menu join" onClick={closeMenus}>회원가입</NavLink>
                     </div>
                 </div>
 
