@@ -481,6 +481,7 @@ right:20px;}
       footer.footer-bottom section address{text-align:center;}
 
       .about{padding:0 1%;}
+      .about .location{gap:30px;}
 
       ul.level-curriculums{gap:15px; padding:0 1%;}
       
@@ -536,6 +537,8 @@ right:20px;}
       footer.footer-bottom section ul li a{font-size:14px;}
       footer.footer-bottom section address{width:100%;}
       footer.footer-bottom section ul{ margin:5px auto 0 auto;}
+
+      .about .location{gap:20px;}
 
       ul.level-curriculums{gap:10px;}
       ul.level-curriculums li h2{width: 130px;
@@ -608,6 +611,10 @@ right:20px;}
       footer section .hours-location{width:100%; }
 
       footer.footer-bottom section address{margin:0 auto; }
+
+      .about .location{gap:0px; flex-wrap:wrap;}
+      .about .location .map{margin-bottom:30px;}
+      .about .location .map, .about .location .route-guide{width: 100%;}
   
       ul.level-curriculums li h1{font-size: 25px;}
       ul.level-curriculums li h2{width: 110px;
