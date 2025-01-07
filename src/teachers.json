@@ -32,7 +32,7 @@
     {   
         "id": 4,
         "name": "VICTOR",
-        "imgUrl": "./src/img/victor.png",
+        "imgUrl": "/assets/vicor.png",
         "classLevel": ["입문(A1)", "중고급(B2)", "고급(C1)"],
         "major": "프랑스어 문학",
         "language": "프랑스어",
