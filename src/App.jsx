@@ -14,6 +14,7 @@ import AboutPage from "./pages/AboutPage";
 import CenterClass from "./pages/CenterClass";
 import Login from "./components/Login";
 import Join from "./components/Join";
+import AboutTeacher from "./pages/AboutTeacher";
 
 const GlobalStyles = createGlobalStyle`
   ${reset};
@@ -81,10 +82,11 @@ const GlobalStyles = createGlobalStyle`
   header  nav .menus .main-menu.login:after{content:"/";}
   header  nav .menus .main-menu .sub-menu{opacity:0; z-index:-1;
   position:absolute; top:64px; left:50%; transform:translateX(-50%); background-color:#fff;
-  width:167%;padding: 15px 10px;box-shadow: 0 0px 4px rgba(0,0,0,0.23); transition: 0.3s ease-in-out;}
+  width:120px;padding: 15px 10px;box-shadow: 0 0px 4px rgba(0,0,0,0.23); transition: 0.3s ease-in-out;}
   header  nav .menus .main-menu:hover .sub-menu{opacity:1;}
   header  nav .menus .main-menu .sub-menu a{margin-right:0; width:100%;
-  display:block; text-align:center; line-height:1.5;}
+  display:block; text-align:center; line-height:1.2; margin-bottom:8px;word-break:keep-all; font-size:15px;}
+  header  nav .menus .main-menu .sub-menu a:last-child{margin-bottom:0;}
   .m-hamburger-btn{display:none;font-size: 23px;}
   .open-menus{display:block !important;}
 
@@ -362,9 +364,10 @@ max-width:98px; width:100%; margin:auto; font-size:17px; padding:5px 7px; displa
   align-items: center; border-radius:3px;}
 .currculums ul.curriculum li.curriculum-detail a svg {font-size:12px; vertical-align:middle; display:inline-block;}
 
-//로그인, 회원가입 페이지
+//로그인, 회원가입, 강사진소개 페이지
 .login-page,
-.join-page{background-color:#F3F3F3; padding-bottom:200px;}
+.join-page,
+.about-teacher-page{background-color:#F3F3F3; padding-bottom:200px;}
 .login-page .form-wrap,
 .join-page .form-wrap{max-width:440px; width:100%; height:100%; margin:80px auto 0 auto;
 background-color:#fff; padding:70px 45px 86px 45px; position: relative;
@@ -441,6 +444,40 @@ right:20px;}
   float: left;
   text-align: center;
 }
+
+.about-teacher-page{}
+.about-teacher-page ul{max-width:1400px; width:100%; margin:112px auto 0 auto;
+display:flex; flex-wrap:wrap; gap:49px 3%; }
+.about-teacher-page ul li{background-color:#fff; border-radius:10px;width:30.333%; overflow:hidden;}
+.about-teacher-page ul li h1{background:linear-gradient(to left, #C658E1, #5747BF);
+color:#fff; text-align:center; font-size:44px; padding:11px 0;}
+
+.about-teacher-page ul li > section > div.teacher-wrap{display:flex;flex-wrap:wrap;}
+.about-teacher-page ul li > section > div.teacher-wrap:after{content:""; display:block; clear: both; 
+background:linear-gradient(to left, #C658E1, #5747BF);width:100%; height:2px;margin-top:30px;}
+.about-teacher-page ul li > section > div.teacher-wrap div{width:50%; }
+.about-teacher-page ul li > section > div.teacher-wrap div h3,
+.about-teacher-page ul li > section div.teacher-description div h3{margin-bottom:6px;}
+
+.about-teacher-page ul li > section div.teacher-description div h3{margin-bottom:4px;}
+
+.about-teacher-page ul li > section > div.teacher-wrap div h3:last-child{margin-bottom:0;}
+.about-teacher-page ul li > section > div.teacher-wrap div h3 strong,
+.about-teacher-page ul li > section div.teacher-description div h3 strong{background-color:#9337C7; text-align:center;
+color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margin-right:9px; }
+
+.about-teacher-page ul li > section > div div h3 span,
+.about-teacher-page ul li > section div.teacher-description div h3 span{color:#333; font-size:16px;}
+.about-teacher-page ul li > section div.teacher-description div h3 span{display:block; margin-top:4px;}
+.about-teacher-page ul li > section{ padding:36px 30px 36px 30px;}
+
+.about-teacher-page ul li > section div.teacher-description div p{color:#222;line-height: 1.25; font-size:17px;}
+
+.about-teacher-page ul li > section > div.teacher-wrap div.teacher-img img {width:153px; height:153px; display:block; border-radius:50%;}
+
+.about-teacher-page ul li > section div.teacher-description{width:100%;margin-top:30px;}
+
+
 
     @media (max-width:1510px) {
       .main-cards ul{gap:20px;}
@@ -735,6 +772,7 @@ const App = () => {
         <Route path="/" element={ < MainLayout /> } >
           <Route index element={<HomePage /> } />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/about-teacher" element={<AboutTeacher />}/>
           <Route path="/center-class" element={<CenterClass />} />
           <Route path="/login" element={<Login />} />
           <Route path="/join" element={<Join />} />

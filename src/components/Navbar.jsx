@@ -10,6 +10,7 @@ const Navbar = () => {
     const menusRef = useRef();
     const mainRef = useRef();
     const subRef = useRef();
+    const subRefAbout = useRef(); 
 
 
     const onClick = e => {
@@ -20,6 +21,11 @@ const Navbar = () => {
     const openSubmenu = e => {
         e.preventDefault();
         subRef.current.classList.toggle("open-menus")
+    }
+
+    const openSubmenuAbout = e => {
+        e.preventDefault();
+        subRefAbout.current.classList.toggle("open-menus")
     }
 
     const closeMenus = () => {
@@ -40,7 +46,13 @@ const Navbar = () => {
                     </div>
                     <button onClick={onClick} ref={mBtnRef} className="m-hamburger-btn"><FontAwesomeIcon icon={faBars} /></button>
                     <div className="menus" ref={menusRef}>
-                        <NavLink className="main-menu" to="/about" onClick={closeMenus}>소개</NavLink>
+                        <NavLink className="main-menu" onClick={openSubmenuAbout} ref={mainRef}>
+                            소개
+                            <div className="sub-menu" ref={subRefAbout}>
+                                <NavLink to="/about">알리앙스 프랑세즈 소개</NavLink>
+                                <NavLink to="/about-teacher">강사 소개</NavLink>
+                            </div>
+                        </NavLink>
                         <NavLink className="main-menu" onClick={openSubmenu} ref={mainRef}>
                             수강신청
                             <div className="sub-menu" ref={subRef}>
