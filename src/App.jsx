@@ -447,7 +447,7 @@ right:20px;}
 
 .about-teacher-page{}
 .about-teacher-page ul{max-width:1400px; width:100%; margin:112px auto 0 auto;
-display:flex; flex-wrap:wrap; gap:49px 3%; }
+display:flex; flex-wrap:wrap; gap:49px 3%; justify-content:center; }
 .about-teacher-page ul li{background-color:#fff; border-radius:10px;width:30.333%; overflow:hidden;}
 .about-teacher-page ul li h1{background:linear-gradient(to left, #C658E1, #5747BF);
 color:#fff; text-align:center; font-size:44px; padding:11px 0;}
@@ -459,6 +459,7 @@ background:linear-gradient(to left, #C658E1, #5747BF);width:100%; height:2px;mar
 .about-teacher-page ul li > section > div.teacher-wrap div h3,
 .about-teacher-page ul li > section div.teacher-description div h3{margin-bottom:6px;}
 
+.about-teacher-page ul li > section div.teacher-description .about-teacher{margin-top:11px;}
 .about-teacher-page ul li > section div.teacher-description div h3{margin-bottom:4px;}
 
 .about-teacher-page ul li > section > div.teacher-wrap div h3:last-child{margin-bottom:0;}
@@ -520,6 +521,9 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
       .about{padding:0 1%;}
       .about .location{gap:30px;}
 
+      .about-teacher-page ul{gap: 49px 2%;}
+      .about-teacher-page ul li{width:31.333%;}
+
       ul.level-curriculums{gap:15px; padding:0 1%;}
       
       .class-schedule-wrap,
@@ -533,11 +537,15 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
       .currculums ul.curriculum li strong, 
       .currculums ul.curriculum li a{font-size:16px;}
 
+
+
     }
     @media (max-width:1200px) {
       header nav .logo a{font-size:24px;}
       header nav .menus a{margin-right:20px;}
       .main-cards ul{gap:10px;}
+
+      .about-teacher-page ul li > section > div.teacher-wrap div.teacher-img img{width:120px; height:120px;}
 
       ul.level-curriculums li h2{width: 150px;
         height: 150px;line-height: 150px;}
@@ -547,6 +555,8 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
       
       .class-schedules ul li a h3{font-size:41px;margin-left:16px;} 
       .class-schedules ul li a h3 svg{font-size:58px;}
+
+      
 
 
     }
@@ -576,7 +586,8 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
       footer.footer-bottom section ul{ margin:5px auto 0 auto;}
 
       .about .location{gap:20px;}
-
+      .about-teacher-page ul li > section{padding: 36px 15px 36px 15px;}
+      .about-teacher-page ul li > section > div.teacher-wrap div.teacher-img img{width:100px; height:100px;}
       ul.level-curriculums{gap:10px;}
       ul.level-curriculums li h2{width: 130px;
     height: 130px;
@@ -652,7 +663,10 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
       .about .location{gap:0px; flex-wrap:wrap;}
       .about .location .map{margin-bottom:30px;}
       .about .location .map, .about .location .route-guide{width: 100%;}
-  
+      .about-teacher-page ul{padding:0 2%;}
+      .about-teacher-page ul li{width:49%;}
+      .about-teacher-page ul li > section > div.teacher-wrap div.teacher-img img{width:120px; height:120px;}
+
       ul.level-curriculums li h1{font-size: 25px;}
       ul.level-curriculums li h2{width: 110px;
         height: 110px; line-height:110px; font-size:60px;}
@@ -686,8 +700,10 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
     @media (max-width:600px){
       .main-cards li h2{ word-break:keep-all; word-spacing:-7px; font-size: 27px;}
       footer.footer-bottom section address,
-      footer.footer-bottom section ul li a{font-size: 14px;}    
-
+      footer.footer-bottom section ul li a{font-size: 14px;}  
+ 
+      .about-teacher-page ul li h1{font-size:30px;}
+      .about-teacher-page ul li > section > div.teacher-wrap div.teacher-img img{width:100px; height:100px;}
       .class-info dl dd:nth-child(2) a, .class-info dl dd:nth-child(3) a{font-size:22px;}
       .class-info dl dd:nth-child(4) a{max-width:220px;}
       .class-info dl dd a{margin-left:20px; }
@@ -714,6 +730,10 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
     }
  
     @media (max-width:480px){
+
+      .about-teacher-page ul li > section > div.teacher-wrap div{width:100% }
+      .about-teacher-page ul li > section > div.teacher-wrap div:last-child{margin-top:20px;} 
+      .about-teacher-page ul li > section > div.teacher-wrap div.teacher-img img{margin:auto;}
       .main-cards ul{gap:13px 10px;}
       .main-cards h1{font-size:35px;margin-bottom: 60px;}
       .main-cards li h2{font-size:20px;}

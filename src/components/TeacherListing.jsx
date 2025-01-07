@@ -13,16 +13,16 @@ const TeacherListing = () => {
                             </div>
                             
                             <div>
-                                <h3><strong>강의레벨</strong><span>{teacher.classLevel}</span></h3>
+                                <h3><strong>강의레벨</strong><span>{teacher.classLevel.join(", ")}</span></h3>
                                 <h3><strong>전공</strong><span>{teacher.major}</span></h3>
                                 <h3><strong>수업언어</strong><span>{teacher.language}</span></h3>
                             </div>
                         </div>
                         <div className="teacher-description">
                             <div>
-                                <h3><strong>경력</strong><span>{teacher.qualification}</span></h3>
+                                <h3><strong>경력</strong>{teacher.qualification.map((q, idx) => (<span key={idx}>{q}<br/></span>))}</h3>
                             </div>
-                            <div>
+                            <div className="about-teacher">
                                 <h3><strong>소개</strong></h3>
                                 <p>
                                     {teacher.description}
