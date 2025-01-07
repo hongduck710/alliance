@@ -48,7 +48,7 @@ const Navbar = () => {
                     <div className="menus" ref={menusRef}>
                         <NavLink className="main-menu" onClick={openSubmenuAbout} ref={mainRef}>
                             소개
-                            <div className="sub-menu" ref={subRefAbout}>
+                            <div className="sub-menu" onClick={closeMenus} ref={subRefAbout}>
                                 <NavLink to="/about">알리앙스 프랑세즈 소개</NavLink>
                                 <NavLink to="/about-teacher">강사 소개</NavLink>
                             </div>
