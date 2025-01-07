@@ -2,7 +2,7 @@
     {   
         "id": 1,
         "name": "VICTOR",
-        "imgUrl": "https://github.com/hongduck710/alliance/blob/master/src/img/victor.png",
+        "imgUrl": "https://raw.githubusercontent.com/hongduck710/alliance/refs/heads/master/src/img/victor.png",
         "classLevel": ["입문(A1)", "중고급(B2)", "고급(C1)"],
         "major": "프랑스어 문학",
         "language": "프랑스어",
@@ -12,7 +12,7 @@
     {   
         "id": 2,
         "name": "VICTOR",
-        "imgUrl": "https://github.com/hongduck710/alliance/blob/master/src/img/victor.png",
+        "imgUrl": "https://raw.githubusercontent.com/hongduck710/alliance/refs/heads/master/src/img/victor.png",
         "classLevel": ["입문(A1)", "중고급(B2)", "고급(C1)"],
         "major": "프랑스어 문학",
         "language": "프랑스어",
@@ -22,7 +22,7 @@
     {   
         "id": 3,
         "name": "VICTOR",
-        "imgUrl": "https://github.com/hongduck710/alliance/blob/master/src/img/victor.png",
+        "imgUrl": "https://raw.githubusercontent.com/hongduck710/alliance/refs/heads/master/src/img/victor.png",
         "classLevel": ["입문(A1)", "중고급(B2)", "고급(C1)"],
         "major": "프랑스어 문학",
         "language": "프랑스어",
@@ -32,7 +32,7 @@
     {   
         "id": 4,
         "name": "VICTOR",
-        "imgUrl": "https://github.com/hongduck710/alliance/blob/master/src/img/victor.png",
+        "imgUrl": "https://raw.githubusercontent.com/hongduck710/alliance/refs/heads/master/src/img/victor.png",
         "classLevel": ["입문(A1)", "중고급(B2)", "고급(C1)"],
         "major": "프랑스어 문학",
         "language": "프랑스어",
@@ -42,7 +42,7 @@
     {   
         "id": 5,
         "name": "VICTOR",
-        "imgUrl": "https://github.com/hongduck710/alliance/blob/master/src/img/victor.png",
+        "imgUrl": "https://raw.githubusercontent.com/hongduck710/alliance/refs/heads/master/src/img/victor.png",
         "classLevel": ["입문(A1)", "중고급(B2)", "고급(C1)"],
         "major": "프랑스어 문학",
         "language": "프랑스어",
@@ -52,7 +52,7 @@
     {   
         "id": 6,
         "name": "VICTOR",
-        "imgUrl": "https://github.com/hongduck710/alliance/blob/master/src/img/victor.png",
+        "imgUrl": "https://raw.githubusercontent.com/hongduck710/alliance/refs/heads/master/src/img/victor.png",
         "classLevel": ["입문(A1)", "중고급(B2)", "고급(C1)"],
         "major": "프랑스어 문학",
         "language": "프랑스어",
