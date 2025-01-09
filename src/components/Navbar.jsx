@@ -16,6 +16,8 @@ const Navbar = () => {
     const onClick = e => {
         e.preventDefault();
         menusRef.current.classList.toggle("open-menus");
+        subRef.current.classList.remove("open-menus");
+        subRefAbout.current.classList.remove("open-menus");
     }
 
     const openSubmenu = e => {
@@ -44,7 +46,7 @@ const Navbar = () => {
                     <div className="logo">
                         <NavLink to="/"><span>A</span>LLIANCE <span>F</span>RANÇAISE</NavLink>
                     </div>
-                    <button onClick={onClick} ref={mBtnRef} className="m-hamburger-btn"><FontAwesomeIcon icon={faBars} /></button>
+                    <button onClick={onClick}  ref={mBtnRef} className="m-hamburger-btn"><FontAwesomeIcon icon={faBars} /></button>
                     <div className="menus" ref={menusRef}>
                         <NavLink className="main-menu" onClick={openSubmenuAbout} ref={mainRef}>
                             소개
