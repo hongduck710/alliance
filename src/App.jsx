@@ -83,7 +83,7 @@ const GlobalStyles = createGlobalStyle`
   header  nav .menus .main-menu .sub-menu{opacity:0; z-index:-1;
   position:absolute; top:64px; left:50%; transform:translateX(-50%); background-color:#fff;
   width:120px;padding: 15px 10px;box-shadow: 0 0px 4px rgba(0,0,0,0.23); transition: 0.3s ease-in-out;}
-  header  nav .menus .main-menu:hover .sub-menu{opacity:1;}
+  header  nav .menus .main-menu:hover .sub-menu{opacity:1; z-index:1;}
   header  nav .menus .main-menu .sub-menu a{margin-right:0; width:100%;
   display:block; text-align:center; line-height:1.2; margin-bottom:8px;word-break:keep-all; font-size:15px;}
   header  nav .menus .main-menu .sub-menu a:last-child{margin-bottom:0;}
@@ -450,7 +450,7 @@ right:20px;}
 display:flex; flex-wrap:wrap; gap:49px 3%; justify-content:center; }
 .about-teacher-page ul li{background-color:#fff; border-radius:10px;width:30.333%; overflow:hidden;}
 .about-teacher-page ul li h1{background:linear-gradient(to left, #C658E1, #5747BF);
-color:#fff; text-align:center; font-size:44px; padding:11px 0;}
+color:#fff; text-align:center; font-size:44px; padding:11px 0; font-family: "Poppins", serif; font-weight: 600; font-style: normal;}
 
 .about-teacher-page ul li > section > div.teacher-wrap{display:flex;flex-wrap:wrap;}
 .about-teacher-page ul li > section > div.teacher-wrap:after{content:""; display:block; clear: both; 
@@ -523,6 +523,7 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
 
       .about-teacher-page ul{gap: 49px 2%;}
       .about-teacher-page ul li{width:31.333%;}
+   
 
       ul.level-curriculums{gap:15px; padding:0 1%;}
       
@@ -731,9 +732,9 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
  
     @media (max-width:480px){
 
-      .about-teacher-page ul li > section > div.teacher-wrap div{width:100% }
-      .about-teacher-page ul li > section > div.teacher-wrap div:last-child{margin-top:20px;} 
-      .about-teacher-page ul li > section > div.teacher-wrap div.teacher-img img{margin:auto;}
+      .about-teacher-page ul li{width:100%;}
+      .about-teacher-page ul li > section > div.teacher-wrap div.teacher-img img{width:120px; height:120px; margin:auto;}
+
       .main-cards ul{gap:13px 10px;}
       .main-cards h1{font-size:35px;margin-bottom: 60px;}
       .main-cards li h2{font-size:20px;}
@@ -779,7 +780,7 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
       .join-page .form-wrap{padding:70px 20px 86px 20px;}
     }
     @media (max-width:320px){
-
+      .about-teacher-page ul li > section > div.teacher-wrap div.teacher-img img{margin:0;}
     }
 
 `;
