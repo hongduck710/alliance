@@ -795,7 +795,7 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
       padding: 30px 10px 10px 10px;
       line-height: 1.5;}
 
-      .login-page, .join-page{padding:0 1% 200px 1%; }
+      .login-page, .join-page{padding:0 1.5% 200px 1.5%; }
       .login-page .form-wrap,
       .join-page .form-wrap{padding:70px 20px 86px 20px;}
 
