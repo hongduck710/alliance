@@ -127,7 +127,7 @@ const GlobalStyles = createGlobalStyle`
   .main-intro .w1500 {display:flex; justify-content:space-between; flex-wrap:wrap;}
   .main-intro .w1500 > div{width:50%;}
   .main-intro .w1500 .intro-contents{ color:#fff;}
-  .main-intro .w1500 .intro-contents h1{font-weight:800; font-size:46px;word-spacing: -2px; }
+  .main-intro .w1500 .intro-contents h1{font-weight:800; font-size:46px;word-spacing: -2px; word-break: keep-all;}
   .main-intro .w1500 .intro-contents h1 p{width:100%; height:1px; background-color:#fff; position:relative;
   margin:16px 0 34px 0;}
   .main-intro .w1500 .intro-contents h1 p img{position: absolute;
@@ -663,6 +663,7 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
       .video-class ul li .thumbnail-wrap{height:254px;}
 
       .main-intro .w1500 .intro-contents{width:100%;}
+      .main-intro .w1500 .intro-contents h1{text-align:center;}
       .main-intro .w1500 > div.youtube-video{margin: 30px auto 0 auto; width:100%;}
       .class-schedules,  .video-class,  .partners{padding: 0 4%;}
       .main-intro::after{display:none;}
