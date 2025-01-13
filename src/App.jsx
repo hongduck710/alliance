@@ -754,7 +754,19 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
 
       .about-teacher-page ul li{width:100%;}
       .about-teacher-page ul li > section > div.teacher-wrap div.teacher-img img{width:120px; height:120px; margin:auto;}
-
+      
+      .main-cards li::before {
+        border-left: 3px solid #F54A4A;
+        border-top: 3px solid #F54A4A;
+        top: -4px;
+        left: -4px;
+      }
+      .main-cards li::after{
+        border-right: 3px solid rgb(44, 40, 156);
+        border-bottom: 3px solid rgb(44, 40, 156);
+        right: -4px;
+        bottom: -4px;
+      }
       .main-cards ul{gap:13px 10px;}
       .main-cards h1{font-size:35px;margin-bottom: 60px;}
       .main-cards li h2{font-size:20px;}
