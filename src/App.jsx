@@ -485,8 +485,8 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
 // faq페이지
 .faq-page .page-headline{margin-bottom:80px;}
 .faq-page .page-headline.faq h1{font-size:32px; color:#A1A4F5; }
-.faq-page{max-width:800px; width:100%; margin: 0 auto 200px auto;}
-.faq-page ul{width:100%; margin:auto; border:1px solid #D9D9D9;}
+.faq-page{ width:100%; margin: 0 auto 200px auto;}
+.faq-page ul{width:100%; max-width:800px; margin:auto; border:1px solid #D9D9D9;}
 .faq-page ul li{width:100%; margin:auto; cursor: pointer;}
 .faq-page ul li h1{display: flex;
   justify-content: space-between;
@@ -496,6 +496,8 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
 .faq-page ul li > div{height:0px; width:100%; overflow:hidden; padding:0;}
 .faq-page ul li.open > div{height:auto;padding:27px 50px;border-top:1px solid #D9D9D9;}
 
+.page-bg{width:100vw;}
+.page-bg img{width:100vw; display:block;}
 
     @media (max-width:1510px) {
       .main-cards ul{gap:20px;}
@@ -635,7 +637,7 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
 
     @media (max-width:800px){
       header nav .logo a{font-size: 20px;}
-      .faq-page{padding: 0 1.5%;}
+      .faq-page {padding: 0 1.5%;}
     }
 
     @media (max-width:768px){
@@ -796,6 +798,7 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
       .login-page, .join-page{padding:0 1% 200px 1%; }
       .login-page .form-wrap,
       .join-page .form-wrap{padding:70px 20px 86px 20px;}
+
 
       .faq-page ul li h1{padding: 27px 20px; font-size:18px;}
     }
