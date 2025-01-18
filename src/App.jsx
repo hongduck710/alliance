@@ -111,7 +111,7 @@ const GlobalStyles = createGlobalStyle`
   .main-cards li h3 svg{font-size:52px;}
   .main-cards li h2{font-size:32px; color:#000;    font-family: 'TTSahmyookUniversityR'; margin-bottom:30px;}
   .main-cards li p{text-align:left;margin-top:30px; border-top:1px solid #CBCBCB; padding-top:30px; color:#222222;
-  font-size:17px; line-height:37px;}
+  font-size:17px; line-height:29px;}
   // 메인 인트로
   .main-intro {width:100%; margin: 172px auto 0 auto; padding:58px 0; position: relative;
     background:linear-gradient(to right, #131550 -30%,#5E7FFF);}
@@ -124,7 +124,7 @@ const GlobalStyles = createGlobalStyle`
   top: 50%;
   transform: translate(0, -50%);
   height: 101%;}
-  .main-intro .w1500 {display:flex; justify-content:space-between; flex-wrap:wrap;}
+  .main-intro .w1500 {display:flex; justify-content:space-between; flex-wrap:wrap; align-items:center;}
   .main-intro .w1500 > div{width:50%;}
   .main-intro .w1500 .intro-contents{ color:#fff;}
   .main-intro .w1500 .intro-contents h1{font-weight:800; font-size:46px;word-spacing: -2px; word-break: keep-all;}
