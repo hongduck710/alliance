@@ -168,7 +168,7 @@ const GlobalStyles = createGlobalStyle`
     .video-class ul li .thumbnail-wrap:after{border-radius: 50%;content:"▶"; display:block;position:absolute; top:50%; left:50%; 
       transform:translate(-50%, -50%); width: 80px; height: 80px; padding-left: 3px;
   border: 3px solid #fff; text-align: center; line-height: 80px; color: #fff; font-size: 41px;}
-    .video-class ul li .thumbnail-wrap img{width:100%;padding-left: 3px;}
+    .video-class ul li .thumbnail-wrap img{width:100%;}
     .video-class ul li h1{font-size:22px; color:#434343;word-break: keep-all; font-weight: 800; margin-top:12px;}
 
     //  수강 스케줄
