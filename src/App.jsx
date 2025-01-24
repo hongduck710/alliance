@@ -164,7 +164,7 @@ const GlobalStyles = createGlobalStyle`
       width:100%; background:linear-gradient(to left,#5E7FFF,#2B2FA3,#131550);
       transform: perspective(300px) rotatex(20deg);}
     .video-class ul li {cursor: pointer;}
-    .video-class ul li .thumbnail-wrap{height:254px; overflow:hidden; border-radius:15px; position:relative;}
+    .video-class ul li .thumbnail-wrap{ overflow:hidden; border-radius:15px; position:relative;}
     .video-class ul li .thumbnail-wrap:after{border-radius: 50%;content:"▶"; display:block;position:absolute; top:50%; left:50%; 
       transform:translate(-50%, -50%); width: 80px; height: 80px; padding-left: 3px;
   border: 3px solid #fff; text-align: center; line-height: 80px; color: #fff; font-size: 41px;}
@@ -522,14 +522,14 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
 
       .main-intro .w1500 .intro-contents{padding-right:1.5%;}
 
-
+      .video-class{padding:0 1%;}
       .video-class ul {gap:1%;}
-      .video-class ul li .thumbnail-wrap{height:200px;}
       .class-schedules ul{gap:1%;}
       .class-schedules ul li a{padding: 32px 0 32px 0px; }
       .class-schedules ul li a h4{ margin-top: 20px; }
       .class-schedules ul li a h4:after{content:""; display:block; clear: both;}
 
+      .partners{padding:0 1%;}
       .partners ul{gap:25px;}
 
       footer{padding: 44px 2%;}
@@ -586,10 +586,6 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
       .main-cards ul{flex-wrap:wrap;}
       .main-cards ul li{width:47%;}
       .main-cards h1{font-size:50px;}
-      
-      .video-class ul li .thumbnail-wrap{height:150px;}
-
-
       
       .class-schedules{padding: 6%;}
       .class-schedules ul{flex-wrap:wrap; justify-content:center;}
@@ -660,7 +656,6 @@ color:#fff;font-size:15px; padding:3px 0; width:67px;display:inline-block; margi
 
       .video-class ul{flex-wrap:wrap;}
       .video-class ul li{width:100%; margin-top:50px;}
-      .video-class ul li .thumbnail-wrap{height:254px;}
 
       .main-intro .w1500 .intro-contents{width:100%;}
       .main-intro .w1500 .intro-contents h1{text-align:center;}
